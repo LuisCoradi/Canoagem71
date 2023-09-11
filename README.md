@@ -3,11 +3,11 @@ Repositório que contém os códigos referentes ao projeto integrador para a Ins
 
 ## Devs:
  - [Luis Felipe Coradi e Sousa](https://github.com/LuisCoradi)
- - 
+   
  - [Heron Felipe Juvenil Divino](https://github.com/heronfelipe10)
- - 
+   
  - [Guilherme Angst Royer](https://github.com/WlRoyer)
- - 
+   
  - [João Vitor Moreira Spelfeld](https://github.com/Spelfeld)
 
 ## Recursos:
