@@ -1,0 +1,96 @@
+/* Estilos CSS para o chat suporte*/
+.chat-container {
+  width: 290px;
+  margin: 200px auto;
+  margin-right: 17px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 20px;
+}
+
+.chat-header {
+  background-color: #69e25e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #69e25e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  background-color: #69e25e;
+  color: #f8f7f7;
+  box-shadow: #000000;
+  text-shadow: #000000;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 115px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
