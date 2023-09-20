@@ -2,42 +2,39 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionário de Bem-Estar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Esqueci</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="header">
         <div class="header-left">
+          <a href="index.html">
           <input type="image" src="logo-menu-sidebar.jpg" name="saveForm" class="sidemenu" id="saveForm" />
+          </a>
         </div>
         <div class="header-center">
+          <a href="index.html"> 
           <input type="image" src="logo-da-empresa.png" name="saveForm" class="logo" id="saveForm" />
+          </a>
         </div>
-        <div class="header-right">
+        <div class="header-right"> 4
           <input type="text" placeholder="Digite o que deseja pesquisar..." class="pesquisa">
           <button class="botao"> PESQUISAR </button>
         </div>
       </div>
-    <div class="question">
-        <p>1. Eu me sinto bem fisicamente.</p>
-        <div class="options">
-            <label>
-                <input type="checkbox" name="question1" value="Concordo"> Concordo
-            </label>
-            <label>
-                <input type="checkbox" name="question1" value="Neutro"> Neutro
-            </label>
-            <label>
-                <input type="checkbox" name="question1" value="Não Concordo"> Não Concordo
-            </label>
-        </div>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Resgatar sua senha</h1>
+            <p>Digite o seu email para resetar sua senha</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <a href="telaCadastro.html">Voltar</a>
+            <input type="submit" value="Enviar" class="btn" />
+        </form>
     </div>
 
-    <div class="question">
-        <p>2. Comente sobre seu estado mental:</p>
-        <textarea name="question2" rows="4" cols="50" placeholder="Escreva sua resposta aqui"></textarea>
-    </div>
     <footer>
         <p>&copy; 2023 - Todos os direitos reservados</p>
         <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
@@ -47,11 +44,6 @@
                 <P><a>Sobre nós</a></P>
         </nav>
     </footer>
-
+    
 </body>
 </html>
-
-
-
-
-
