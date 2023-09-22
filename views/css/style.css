@@ -88,10 +88,10 @@ main {
   background-color: rgb(255, 162, 55);
   width: 100%;
   height: 10%;
-  min-height: none;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  border-bottom: 1px solid #000000;
 } 
 /*------------------------------------------------------------*/
 
@@ -111,4 +111,17 @@ main {
   flex-wrap: wrap;
   bottom: 0;
 } 
+/*------------------------------------------------------------*/
+
+/*imagens*/
+/*------------------------------------------------------------*/
+.logo-empresa {
+  width: 5%;
+  height: 5%;
+  flex: 1;
+  margin: 0;
+  margin-left: 10%;
+  padding: 0;
+}
+
 /*------------------------------------------------------------*/
