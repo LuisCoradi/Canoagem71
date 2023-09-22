@@ -1,0 +1,114 @@
+/*configs globais*/
+/*------------------------------------------------------------*/
+body {
+  background-color: rgb(222, 222, 222);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 1%;
+}
+
+.sticky-padrao {
+  position: fixed;
+  width: 100%;
+  top: 0; /* mudar para bottom ou o que for dependente de onde
+          deve ficar fixo*/
+}
+
+.conteudo-padrao {
+  padding-top: 8%; /* IMPORTANTE COLOCAR NA MAIN, IMPEDE
+                        QUE A HEADER FIXA CUBRA INICIO DA PAGINA,
+                        TAMANHO DEVE SER POUCO MAIOR Q TOTAL DA HEADER */
+
+}
+/*------------------------------------------------------------*/
+
+
+/*tabelas*/
+/*------------------------------------------------------------*/
+.tabela-padrao {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #ffffff;
+  width: 50%;
+  padding: 0;
+  border-spacing: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT',
+  Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: auto;
+  border-radius: 4px;
+  border-collapse: separate;
+}
+
+.tabela-padrao th{
+  border: 1px solid rgb(0, 0, 0);
+  align-self: center;
+  background-color: rgb(255, 162, 55);
+  width: 33%;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+.tabela-padrao td{
+  border: 1px solid rgb(0, 0, 0);
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  width: 33%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.tabela-padrao tr{
+  border: 1px solid rgb(0, 0, 0);
+  align-self: center;
+  width: 33%;
+  border-collapse: collapse;
+}
+/*------------------------------------------------------------*/
+
+/*titulos*/
+/*------------------------------------------------------------*/
+.titulo-padrao {
+  font-family: 'Gill Sans', 'Gill Sans MT',
+  Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+/*------------------------------------------------------------*/
+
+/*header*/
+/*------------------------------------------------------------*/
+.header-padrao {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 162, 55);
+  width: 100%;
+  height: 10%;
+  min-height: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+/*------------------------------------------------------------*/
+
+
+/*footer*/
+/*------------------------------------------------------------*/
+.footer-padrao {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: rgb(15, 15, 15);
+  width: 100%;
+  height: 10%;
+  min-height: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom: 0;
+} 
+/*------------------------------------------------------------*/
