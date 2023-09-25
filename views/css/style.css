@@ -202,10 +202,153 @@ main {
 } 
 /*------------------------------------------------------------*/
 
-/*imagens*/
+/*Login e Cadastro*/
+/*------------------------------------------------------------*/
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 120vh;
+  background-color: transparent;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  padding: 40px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+  gap: 5px;
+}
+
+.areaLogin img {
+  width: 420px;
+}
+
+.formLogin h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.3em;
+}
+
+.formLogin p {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.formLogin input {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  outline: none;
+}
+
+.formLogin input:focus {
+  border: 1px solid #267bf1;
+}
+
+.formLogin label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formLogin a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+  transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+  color: #a8c2e6;
+}
+.btn {
+  background-color: #267bf1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #a8c2e6;
+}
 /*------------------------------------------------------------*/
 
+/*Background Imagem*/
+/*------------------------------------------------------------*/
+.background{
+background-image: url("../img/Background.jpg");
+background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+/*------------------------------------------------------------*/
 
+/*Questionario*/
+/*------------------------------------------------------------*/
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        .bodyquest {
+          text-align: center;
+      }
+
+      /* Styling the Form (Color, Padding, Shadow) */
+      .formquest {
+          background-color: #fff;
+          max-width: 500px;
+          margin: 50px auto;
+          padding: 30px 20px;
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Styling form-control Class */
+      .form-control {
+          text-align: left;
+          margin-bottom: 25px;
+      }
+
+      /* Styling form-control Label */
+      .form-control label {
+          display: block;
+          margin-bottom: 10px;
+      }
+
+      /* Styling form-control input,
+      select, textarea */
+      .form-control input,
+      .form-control select,
+      .form-control textarea {
+          border: 1px solid #777;
+          border-radius: 2px;
+          font-family: inherit;
+          padding: 10px;
+          display: block;
+          width: 95%;
+      }
+
+      /* Styling form-control Radio
+      button and Checkbox */
+      .form-control input[type="radio"],
+      .form-control input[type="checkbox"] {
+          display: inline-block;
+          width: auto;
+      }
 /*------------------------------------------------------------*/
 
 /*carrosel*/
@@ -365,6 +508,46 @@ main {
 }
 /*------------------------------------------------------------*/
 
+/*Chamada*/
+/*------------------------------------------------------------*/
+.chamada {
+  list-style: none;
+  padding: 0;
+}
+
+.aluno {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.aluno img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.presenca {
+  margin-top: 10px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
 /*tela de perfil*/
 /*------------------------------------------------------------*/
 .perfil-foto {
