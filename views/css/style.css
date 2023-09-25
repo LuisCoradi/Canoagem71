@@ -147,3 +147,48 @@ main {
   transition: background-color 0.6s ease;
   margin-top: 30px;
 }
+/*------------------------------------------------------------*/
+
+/*colunas*/
+/*------------------------------------------------------------*/
+.recentes {
+  display: flex;
+  flex-direction: row;
+  min-width: none;
+  min-height: none;
+}
+
+.coluna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.noticia-recente {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.noticia-recente img{
+  height: 200px;
+  width: 200px;
+}
+
+.postagem-recente {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.postagem-recente img{
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  border: 2px solid #000000;
+  margin-right: 25px;
+}
+
+/*------------------------------------------------------------*/
