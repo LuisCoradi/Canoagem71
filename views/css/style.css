@@ -303,6 +303,8 @@ main {
   min-width: none;
   min-height: none;
   margin-bottom: 50px;
+  justify-content: center;
+  align-content: center;
 }
 
 .coluna {
@@ -362,3 +364,41 @@ main {
   font-size: 20px;
 }
 /*------------------------------------------------------------*/
+
+/*tela de perfil*/
+/*------------------------------------------------------------*/
+.perfil-foto {
+  width: 100px;
+  border-radius: 100%;
+  border: 2px solid rgb(255, 162, 55);
+}
+
+.perfil-foto-postagem {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 162, 55);
+  align-items: center;
+  padding: 10px;
+  width: 300px;
+  margin-left: 170px;
+}
+
+.perfil p, h4, h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', 
+  Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.perfil h2 {
+  color: rgb(255, 162, 55);
+}
+
+.postagem-perfil {
+  margin-right: 200px;
+}
