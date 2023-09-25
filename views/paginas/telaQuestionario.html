@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de Bem-Estar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+</head>
+  
+<body class="bodyquest">
+    <header class="header-padrao">
+        <img src="../img/logo-menu-sidebar.jpg" class="sidebar-logo">
+        <a href="index.html"> <img src="../img/logo-da-empresa.png" class="logo-empresa"> </a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"> Pesquisar </button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href=""> Zeca </a>
+            <a href=""> Zezinho </a>
+            <a href=""> Joao </a>
+          </div>
+        </div> 
+      </header>
+    <h1>Questionário</h1>
+  
+    <!-- Create Form -->
+    <form class="formquest">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Nome Completo
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Escreva seu Nome" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Idade
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Escreva sua Idade" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Que opção melhor te descreve?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="estudante">Estudante</option>
+                <option value="Trabalhador">Trabalhador</option>
+                <option value="Desempregado">Desempregado
+                </option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+               Você esta bem mentalmente?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Sim</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Não</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Talvez</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>Eu ajudaria uma velhinha a atravessar a rua.
+                <small>Marque sua resposta</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Concordo Totalamente</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Concordo</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Neutro</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Discordo</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Discordo Totalmente</input></label>
+
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Comentarios e Sugestões
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Escreva Aqui">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <input type="submit" value="Enviar" class="btn" />
+    </form>
+    <footer class="footer-padrao">
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+          <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
+          <p><a>Termos de uso</a></p>
+          <p><a>Política de privacidade</a></p>
+          <p><a>Sobre nós</a></p>
+      </footer>
+</body>
+</html>
+
+
+
+
+

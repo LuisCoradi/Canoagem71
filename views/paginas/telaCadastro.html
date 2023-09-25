@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="background">
+  <header class="header-padrao">
+    <img src="../img/logo-menu-sidebar.jpg" class="sidebar-logo">
+    <a href="index.html"> <img src="../img/logo-da-empresa.png" class="logo-empresa"> </a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"> Pesquisar </button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href=""> Zeca </a>
+        <a href=""> Zezinho </a>
+        <a href=""> Joao </a>
+      </div>
+    </div> 
+  </header>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Cadastrar</h1>
+            <p>Digite os seus dados para cadastrar nos campos abaixo.</p>
+            <label for="name">Nome</label>
+            <input type="name" placeholder="Digite seu nome Completo" />
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <label for="password">Senha</label>  
+            <input type="password" placeholder="Digite sua senha" />
+            <label for="password">Confirmar Senha</label>  
+            <input type="password" placeholder="Confirme sua senha" />
+            <a href="telaLogin.html">Já tenho conta</a>
+            <input type="submit" value="Cadastrar" class="btn" />
+        </form>
+    </div>
+    <footer class="footer-padrao">
+      <p>&copy; 2023 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
+        <p><a>Termos de uso</a></p>
+        <p><a>Política de privacidade</a></p>
+        <p><a>Sobre nós</a></p>
+    </footer>
+    
+</body>
+</html>

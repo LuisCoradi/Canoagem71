@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Chamada</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header-padrao">
+        <img src="../img/logo-menu-sidebar.jpg" class="sidebar-logo">
+        <a href="index.html"> <img src="../img/logo-da-empresa.png" class="logo-empresa"> </a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"> Pesquisar </button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href=""> Zeca </a>
+            <a href=""> Zezinho </a>
+            <a href=""> Joao </a>
+          </div>
+        </div> 
+      </header>
+    <h1>Canoagem - Turma 1</h1>
+    <form class="formquest">
+    <ul class="chamada">
+        <li class="aluno">
+            <img src="../img/conta1.jpg" alt="Foto do Aluno 1">
+            <div class="info">
+                <span class="nome">Zé</span>
+                <div class="presenca">
+                    <label for="presenca1">Presente</label>
+                    <input type="checkbox" id="presenca1">
+                    <label for="faltou1">Faltou</label>
+                    <input type="checkbox" id="faltou1">
+                </div>
+            </div>
+        </li>
+        <hr>
+        <li class="aluno">
+            <img src="../img/conta2.jpg" alt="Foto do Aluno 2">
+            <div class="info">
+                <span class="nome">Zézão</span>
+                <div class="presenca">
+                    <label for="presenca1">Presente</label>
+                    <input type="checkbox" id="presenca1">
+                    <label for="faltou1">Faltou</label>
+                    <input type="checkbox" id="faltou1">
+                </div>
+            </div>
+        </li>
+        <hr>
+        <li class="aluno">
+            <img src="../img/conta3.jpg" alt="Foto do Aluno 3">
+            <div class="info">
+                <span class="nome">Zézildo</span>
+                <div class="presenca">
+                    <label for="presenca1">Presente</label>
+                    <input type="checkbox" id="presenca1">
+                    <label for="faltou1">Faltou</label>
+                    <input type="checkbox" id="faltou1">
+                </div>
+            </div>
+        </li>
+        <hr>
+        <li class="aluno">
+            <img src="../img/aluno4.jpg" alt="Foto do Aluno 4">
+            <div class="info">
+                <span class="nome">Zézinho</span>
+                <div class="presenca">
+                    <label for="presenca1">Presente</label>
+                    <input type="checkbox" id="presenca1">
+                    <label for="faltou1">Faltou</label>
+                    <input type="checkbox" id="faltou1">
+                </div>
+            </div>
+        </li>
+        <!-- Adicione mais alunos conforme necessário -->
+    </ul>
+</form>
+    <footer class="footer-padrao">
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+          <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
+          <p><a>Termos de uso</a></p>
+          <p><a>Política de privacidade</a></p>
+          <p><a>Sobre nós</a></p>
+      </footer>
+</body>
+</html>
