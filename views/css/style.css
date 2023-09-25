@@ -156,12 +156,14 @@ main {
   flex-direction: row;
   min-width: none;
   min-height: none;
+  margin-bottom: 50px;
 }
 
 .coluna {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 
 .noticia-recente {
@@ -169,11 +171,23 @@ main {
   display: flex;
   flex-direction: row;
   background-color: #ffffff;
+  border: 1px solid rgb(255, 162, 55);
+  padding: 4px;
+  align-items: center;
 }
 
 .noticia-recente img{
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
+  margin-right: 25px;
+  margin-left: 10px;
+}
+
+.noticia-recente p{
+  font-family: 'Gill Sans', 'Gill Sans MT',
+  Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
 .postagem-recente {
@@ -181,14 +195,23 @@ main {
   display: flex;
   flex-direction: row;
   background-color: #ffffff;
+  padding: 4px;
+  border: 1px solid rgb(255, 162, 55);
+  align-items: center;
 }
 
 .postagem-recente img{
   height: 70px;
   width: 70px;
   border-radius: 100%;
-  border: 2px solid #000000;
+  border: 2px solid rgb(255, 162, 55);
   margin-right: 25px;
+  margin-left: 10px;
 }
 
+.postagem-recente p{
+  font-family: 'Gill Sans', 'Gill Sans MT',
+  Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
 /*------------------------------------------------------------*/
