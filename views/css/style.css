@@ -5,34 +5,20 @@
 body {
   background-image: linear-gradient( rgb(162, 162, 162), rgb(81, 81, 81));
   font-size: 16px;
-  padding-top: 75px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 main {
-  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sticky-padrao {
-  position: fixed;
-  width: 100%;
-  top: 0; /* mudar para bottom ou o que for dependente de onde
-          deve ficar fixo*/
-}
-
-.conteudo-padrao {
-  padding-top: 8%; /* IMPORTANTE COLOCAR NA MAIN, IMPEDE
-                        QUE A HEADER FIXA CUBRA INICIO DA PAGINA,
-                        TAMANHO DEVE SER POUCO MAIOR Q TOTAL DA HEADER */
-
-}
 /*------------------------------------------------------------*/
 
 
@@ -84,25 +70,21 @@ main {
 }
 /*------------------------------------------------------------*/
 
-/*header*/
-/*------------------------------------------------------------*/
-/*------------------------------------------------------------*/
-
-
 /*footer*/
 /*------------------------------------------------------------*/
 .footer-padrao {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
-  background-color: rgb(15, 15, 15);
-  width: 100%;
-  height: 10%;
-  min-height: none;
-  justify-content: space-between;
+  position: absolute;
+  background-color: black;
+  color: white;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  height: auto;
   bottom: 0;
+  left: 0;
+  right: 0;
 } 
 /*------------------------------------------------------------*/
 
@@ -450,34 +432,22 @@ input[type="checkbox"] {
 }
 /*tela de perfil*/
 /*------------------------------------------------------------*/
-.perfil-foto {
-  width: 100px;
-  border-radius: 100%;
-  border: 2px solid rgb(252, 174, 84);
-}
-
-.perfil-foto-postagem {
-  width: 50px;
-  border-radius: 100%;
-  cursor: pointer;
-}
-
-.perfil {
+.external-flex-profile {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  border: 1px solid rgb(252, 174, 84);
-  align-items: center;
-  padding: 10px;
-  width: 300px;
-  margin-left: 170px;
+  justify-content: space-between;
+  background-color: white;
+  height: 60vh;
+  width: 80vh;
+
 }
 
-.perfil h2 {
-  color: rgb(252, 174, 84);
+.profile-section-profile {
+  width: 40%;
+  background-color: lightpink;
 }
 
-.postagem-perfil {
-  margin-right: 200px;
+.post-section-profile {
+  flex: 1;
+  background-color: lightblue;
 }
+/*------------------------------------------------------------*/
