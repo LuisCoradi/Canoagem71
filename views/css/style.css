@@ -21,67 +21,19 @@ main {
 
 /*------------------------------------------------------------*/
 
-
-/*tabelas*/
-/*------------------------------------------------------------*/
-.tabela-padrao {
-  border: 1px solid rgb(0, 0, 0);
-  background-color: #ffffff;
-  width: 50%;
-  padding: 0;
-  border-spacing: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: auto;
-  border-radius: 4px;
-  border-collapse: separate;
-}
-
-.tabela-padrao th{
-  border: 1px solid rgb(0, 0, 0);
-  align-self: center;
-  background-color: rgb(252, 174, 84);
-  width: 33%;
-  border-collapse: collapse;
-  font-weight: bold;
-}
-
-.tabela-padrao td{
-  border: 1px solid rgb(0, 0, 0);
-  align-self: center;
-  background-color: rgb(255, 255, 255);
-  width: 33%;
-  text-align: left;
-  border-collapse: collapse;
-}
-
-.tabela-padrao tr{
-  border: 1px solid rgb(0, 0, 0);
-  align-self: center;
-  width: 33%;
-  border-collapse: collapse;
-}
-/*------------------------------------------------------------*/
-
-/*titulos*/
-/*------------------------------------------------------------*/
-.titulo-padrao {
-  font-weight: bold;
-}
-/*------------------------------------------------------------*/
-
 /*footer*/
 /*------------------------------------------------------------*/
 .footer-padrao {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   background-color: black;
   color: white;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: auto;
+  height: -3em;
+  margin-top: 40em;
   bottom: 0;
   left: 0;
   right: 0;
@@ -435,19 +387,38 @@ input[type="checkbox"] {
 .external-flex-profile {
   display: flex;
   justify-content: space-between;
-  background-color: white;
-  height: 60vh;
-  width: 80vh;
-
+  height: 80vh;
+  width: 75%;
+  border-radius: 4px;
 }
 
 .profile-section-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 40%;
-  background-color: lightpink;
+  background-color: rgb(219, 219, 219);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 10px 5px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
+  .profile-picture-profile {
+    width: 30vh;
+    border-radius: 15vh;
+    border: 2px solid rgb(252, 174, 84);
+  } 
+
+  .profile-name-profile {
+    color: rgb(252, 174, 84)
+  }
+
 .post-section-profile {
-  flex: 1;
-  background-color: lightblue;
+  width: 58%;
+  background-color: rgb(219, 219, 219);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 10px 5px 20px 10px rgba(0, 0, 0, 0.05);
 }
 /*------------------------------------------------------------*/
