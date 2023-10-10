@@ -9,8 +9,6 @@
   height: 70px;
   align-items: center;
   justify-content: space-between;
-  padding-right: 30px;
-  border-bottom: 1px solid grey;
   box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.05);
 } 
 
@@ -38,17 +36,59 @@
   justify-content: center;
 }
 
-.header-middle img{
-  height: 74px;
+.logo-header{
+  height: 70px;
   width: 200px;
-  border-radius: 2px;
   margin-right: 76px;
+  margin-left: -2px;
 }
 
-.header-middle input {
+.searchbar-header {
   height: 30px;
   flex: 1;
-  border-radius: 3px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 15px;
   min-width: 0;
-  border: 1.5px solid black;
+  border: 1.0px solid black;
+  box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.searchbar-header::placeholder {
+  
+}
+
+.searchbar-header:focus {
+  
+}
+
+.header-middle button {
+  background-color: rgb(255, 203, 145);
+  cursor: pointer;
+  width: 50px;
+  height: 33px;
+  margin-left: -3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border: 1.0px solid black;
+  box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header-right {
+  height: 100%;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+.header-foto-perfil {
+  width: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 2px solid rgb(255, 203, 145);
 }

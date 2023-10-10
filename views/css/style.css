@@ -54,7 +54,7 @@ main {
 .tabela-padrao th{
   border: 1px solid rgb(0, 0, 0);
   align-self: center;
-  background-color: rgb(255, 162, 55);
+  background-color: rgb(252, 174, 84);
   width: 33%;
   border-collapse: collapse;
   font-weight: bold;
@@ -330,7 +330,7 @@ background-repeat: no-repeat; /* Impede a repetição da imagem */
 }
 
 .active, .dot:hover {
-  background-color: rgb(239, 160, 49);
+  background-color: rgb(252, 174, 84);
 }
 
 /* Fading animation */
@@ -365,7 +365,7 @@ background-repeat: no-repeat; /* Impede a repetição da imagem */
   display: flex;
   flex-direction: row;
   background-color: #ffffff;
-  border: 1px solid rgb(255, 162, 55);
+  border: 1px solid rgb(252, 174, 84);
   padding: 4px;
   align-items: center;
 }
@@ -389,7 +389,7 @@ background-repeat: no-repeat; /* Impede a repetição da imagem */
   flex-direction: row;
   background-color: #ffffff;
   padding: 4px;
-  border: 1px solid rgb(255, 162, 55);
+  border: 1px solid rgb(252, 174, 84);
   align-items: center;
 }
 
@@ -397,7 +397,7 @@ background-repeat: no-repeat; /* Impede a repetição da imagem */
   height: 70px;
   width: 70px;
   border-radius: 100%;
-  border: 2px solid rgb(255, 162, 55);
+  border: 2px solid rgb(252, 174, 84);
   margin-right: 25px;
   margin-left: 10px;
 }
@@ -453,12 +453,13 @@ input[type="checkbox"] {
 .perfil-foto {
   width: 100px;
   border-radius: 100%;
-  border: 2px solid rgb(255, 162, 55);
+  border: 2px solid rgb(252, 174, 84);
 }
 
 .perfil-foto-postagem {
   width: 50px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .perfil {
@@ -466,7 +467,7 @@ input[type="checkbox"] {
   justify-content: center;
   flex-direction: column;
   background-color: #ffffff;
-  border: 1px solid rgb(255, 162, 55);
+  border: 1px solid rgb(252, 174, 84);
   align-items: center;
   padding: 10px;
   width: 300px;
@@ -474,7 +475,7 @@ input[type="checkbox"] {
 }
 
 .perfil h2 {
-  color: rgb(255, 162, 55);
+  color: rgb(252, 174, 84);
 }
 
 .postagem-perfil {
