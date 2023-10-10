@@ -55,11 +55,11 @@
 }
 
 .searchbar-header::placeholder {
-  
+  font-size: 14px;
 }
 
 .searchbar-header:focus {
-  
+  outline: 0;
 }
 
 .header-middle button {
