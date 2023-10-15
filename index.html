@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portal Meninos do Lago</title>
   <link rel="stylesheet" href="/views/css/style.css">
   <script type="text/javascript" src="/views/js/script.js"></script>
 </head>
 <body>
-  <header class="header-padrao">
-    <img src="/views/img/logo-menu-sidebar.jpg" class="sidebar-logo">
-    <a href="/index.html"> <img src="/views/img/logo-da-empresa.png" class="logo-empresa"> </a>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn"> Pesquisar </button>
-      <div id="myDropdown" class="dropdown-content">
-        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-        <a href="/views/paginas/TelaPerfil.html"> Zeca </a>
-        <a href="/views/paginas/TelaPerfil.html"> Zezinho </a>
-        <a href="/views/paginas/TelaPerfil.html"> Joao </a>
+  <header>
+    <div class="header-padrao">
+      <div class="header-left">
+        <a> 
+          <img class="hamburguer-sidebar-icon" src="/views/img/hamburguer-menu.svg">
+        </a>
       </div>
-    </div> 
-
+      <div class="header-middle">
+        <img class="logo-header" src="/views/img/logo-meninos-do-lago.jpg">
+        <input class="searchbar-header" type="text" placeholder="Procurar...">
+        <button><img class="" src="/views/img/search.svg"></button>
+      </div>
+      <div class="header-right"> 
+        <img class="header-foto-perfil" src="/views/img/conta2.jpg">
+      </div>
+    </div>
   </header>
   <main class="conteudo-padrao">
-    <div>
+    <div class="container-main">
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
@@ -57,56 +60,62 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
-    <div class="recentes">
-      <div class="coluna">
-        <section class="noticia-recente">
-          <img src="/views/img/noticia1.jpg">
-          <p> noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia  </p>
-        </section>
-        <section class="noticia-recente">
-          <img src="/views/img/noticia2.jpg">
-          <p> noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia  </p>
-        </section>
-        <section class="noticia-recente">
-          <img src="/views/img/noticia3.jpg">
-          <p> noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia  </p>
-        </section>
+    <div class="flex-recentes-hub">
+      <div class="flex-recentes">
+        <div class="recente-noticia">
+          <div>
+            <img class="img-noticia" src="/views/img/noticia1.jpg">
+          </div>
+          <div>
+            <h4><a href=""></a>Novas Canoas entregues por meio de doação!!</a></h4>
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
+        <div class="recente-noticia">
+          <div>
+            <img class="img-noticia" src="/views/img/noticia2.jpg">
+          </div>
+          <div>
+            <h4><a href=""></a>Novas Canoas entregues por meio de doação!!</a></h4>
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
+        <div class="recente-noticia">
+          <div>
+            <img class="img-noticia" src="/views/img/noticia3.jpg">
+          </div>
+          <div>
+            <h4><a href=""></a>Novas Canoas entregues por meio de doação!!</a></h4>
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
       </div>
-      <div class="coluna">
-        <section class="postagem-recente">
-          <img src="/views/img/conta2.jpg">
-          <p> noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia  </p>
-        </section>
-        <section class="postagem-recente">
-          <img src="/views/img/conta1.jpg">
-          <p> noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia  </p>
-        </section>
-        <section class="postagem-recente">
-          <img src="/views/img/conta3.jpg">
-          <p> noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia noticia 
-          noticia noticia noticia noticia noticia noticia  </p>
-        </section>
+      <div class="flex-recentes">
+        <div class="recente-postagem">
+          <div class="header-post">
+            <img class="post-picture-profile" src="/views/img/conta1.jpg">
+            <h4><a href=""></a>Zeca Figueiredo</a></h4>
+          </div>
+          <div class="main-post">
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
       </div>
     </div>
   </main>
   
-  <footer class="footer-padrao">
-    <p>&copy; 2023 - Todos os direitos reservados</p>
-      <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
-      <p><a>Termos de uso</a></p>
-      <p><a>Política de privacidade</a></p>
-      <p><a>Sobre nós</a></p>
+  <footer>
+    <div class="footer-padrao">
+      <div>
+          <p>&copy; 2023 - Todos os 
+            direitos reservados</p>
+          <p>Entre em contato pelo 
+            e-mail: groyerccl@gmail.com</p>
+          <p>Termos de uso<a href=""></a></p>
+          <p>Política de privacidade<a href=""></a></p>
+          <p>Sobre nós<a href=""></a></p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
