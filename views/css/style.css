@@ -6,15 +6,6 @@ a:visited {
   text-decoration: none;
 }
 
-body {
-  background-image: linear-gradient( rgb(162, 162, 162), rgb(81, 81, 81));
-  font-size: 16px;
-  padding-top: 100px;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
 
 main {
   align-items: center;
@@ -380,85 +371,130 @@ background-repeat: no-repeat; /* Impede a repetição da imagem */
   box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.05);
 } 
 
-/* HEADER LEFT */
-.header-left {
-  display: flex;
-  border-top-right-radius: 1px;
-  border-bottom-right-radius: 1px;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
+.sidebar {
   height: 100%;
-  background-color: white;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: -250px; /* A barra lateral começa fechada, fora da tela */
+  background-color: #f5f5f5;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1;
 }
 
-.hamburguer-sidebar-icon {
-  width: 36px;
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+
+/* HEADER LEFT */
+.header {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  height: 10vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.2);
+}
+
+.header-left {
+  width: 20vh;
   cursor: pointer;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 8.5vh;
+  height: 8.5vh;
+  margin-right: 3vh;
+  margin-left: 1vh;
+  border-radius: 100%;
+  border: 0.4vh solid rgb(0, 159, 141);
+}
+
+.hamburguer-menu-image {
+  color: #ffa114;
+  font-size: 22px;
 }
 
 .header-middle {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 10vh;
 }
 
-.logo-header{
-  height: 70px;
-  width: 200px;
-  margin-right: 76px;
-  margin-left: -2px;
-}
+.vertical-decoration-line {
+  border-left: 0.5vh solid rgb(215, 215, 215);
+  height: 75%;
+  margin-right: 3vh;
+  border-radius: 30px;
+} 
 
-.searchbar-header {
-  height: 30px;
+.container-searchbar {
+  display: flex;
   flex: 1;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  padding-left: 15px;
-  min-width: 0;
-  border: 1.0px solid black;
-  box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.05);
 }
 
-.searchbar-header::placeholder {
-  font-size: 14px;
-}
-
-.searchbar-header:focus {
-  outline: 0;
-}
-
-.header-middle button {
-  background-color: rgb(255, 203, 145);
+.header-searchbar-button {
+  border: 0;
+  background-color: transparent;
   cursor: pointer;
-  width: 50px;
-  height: 33px;
-  margin-left: -3px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
-  border: 1.0px solid black;
-  box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.05);
 }
+
+.header-searchbar {
+  border: 0;
+  outline: 0;
+  flex: 1;
+}
+
+  .header-searchbar::placeholder {
+    color: #b8b8b8;
+  }
 
 .header-right {
-  height: 100%;
-  width: 75px;
+  background-color: rgb(255, 255, 255);
   display: flex;
+  width: 30vh;
+  padding-left: 3vh;
   align-items: center;
-  justify-content: center;
-  padding-left: 40px;
-  padding-right: 30px;
+  text-align: center;
+}
+.header-profile-picture {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 6vh;
+  margin-right: 5vh;
+  height: 6vh;
+  box-shadow: 0px 0px 100px 1px;
 }
 
-.header-foto-perfil {
-  width: 50px;
-  border-radius: 25px;
-  cursor: pointer;
-  border: 2px solid rgb(255, 203, 145);
+.header-profile-name {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 /*------------------------------------------------------------*/
 
