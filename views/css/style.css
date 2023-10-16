@@ -6,6 +6,16 @@ a:visited {
   text-decoration: none;
 }
 
+body {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: 10vh;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
 
 main {
   align-items: center;
@@ -117,11 +127,7 @@ main {
 
 /*Background Imagem*/
 /*------------------------------------------------------------*/
-.background{
-background-image: url("../img/Background.jpg");
-background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-background-repeat: no-repeat; /* Impede a repetição da imagem */
-}
+
 /*------------------------------------------------------------*/
 
 /*Questionario*/
@@ -357,25 +363,12 @@ background-repeat: no-repeat; /* Impede a repetição da imagem */
 
 /* header */
 /*------------------------------------------------------------*/
-.header-padrao {
-  display: flex;
-  background-image: url('/views/img/jungle-background.jpg');
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 70px;
-  z-index: 100;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.05);
-} 
 
 .sidebar {
-  height: 100%;
   width: 0;
   position: fixed;
   top: 0;
+  bottom: 0;
   left: -250px; /* A barra lateral começa fechada, fora da tela */
   background-color: #f5f5f5;
   padding-top: 60px;
