@@ -8,21 +8,28 @@
   <script type="text/javascript" src="/views/js/script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="header-padrao">
-      <div class="header-left">
-        <a> 
-          <img class="hamburguer-sidebar-icon" src="/views/img/hamburguer-menu.svg">
-        </a>
+  <header class="header">
+    <div class="header-left" onclick="openNav()">
+      <img class="logo-image" src="/views/img/logo-da-empresa.png">
+      <p class="hamburguer-menu-image">&#9776;</p>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
       </div>
-      <div class="header-middle">
-        <img class="logo-header" src="/views/img/logo-meninos-do-lago.jpg">
-        <input class="searchbar-header" type="text" placeholder="Procurar...">
-        <button><img class="" src="/views/img/search.svg"></button>
+    </div>
+    <div class="header-middle">
+      <div class="vertical-decoration-line"></div>
+      <div class="container-searchbar">
+        <button class="header-searchbar-button"><img src="/views/img/search.svg"></button>
+        <input class="header-searchbar" placeholder="Buscar..." type="text">
       </div>
-      <div class="header-right"> 
-        <img class="header-foto-perfil" src="/views/img/conta2.jpg">
-      </div>
+    </div>
+    <div class="header-right">
+      <img class="header-profile-picture" src="/views/img/conta1.jpg">
+      <h2 class="header-profile-name"> Zeca Figueiredo </h2>
     </div>
   </header>
   <main class="conteudo-padrao">
