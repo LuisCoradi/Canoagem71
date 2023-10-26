@@ -7,5 +7,20 @@ function closeNav(){
 }
 
 function openHeaderDrop() {
-  document.getElementById("dropdownArrow").style.transform = "rotate(90deg)";
+  let dropTrigger = document.getElementById("headerRight");
+  let dropdownContainer = document.getElementById("dropdownMenuProfile");
+
+  dropTrigger.addEventListener("click", function() {
+    if (dropdownContainer.style.display === "" || dropdownContainer.style.display === "none") {
+      dropdownContainer.style.display = "flex";
+    } else {
+      dropdownContainer.style.display = "none";
+    }
+  });
+
+  window.addEventListener("click", function(event) {
+    if (event.target !== dropTrigger && event.target !== dropdownContainer) {
+      dropdownContainer.style.display = "none";
+    }
+  });
 }
