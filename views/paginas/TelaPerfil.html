@@ -1,80 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Perfil </title>
-  <link rel="stylesheet" href="/views/css/style.css">
-  <script type="text/javascript" src="/views/js/script.js"></script>
+  <title> Página de Perfil </title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
-  <header class="header-padrao">
-    <img src="/views/img/logo-menu-sidebar.jpg" class="sidebar-logo">
-    <a href="/index.html"> <img src="/views/img/logo-da-empresa.png" class="logo-empresa"> </a>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn"> Pesquisar </button>
-      <div id="myDropdown" class="dropdown-content">
-        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-        <a href="/views/paginas/TelaPerfil.html"> Zeca </a>
-        <a href="/views/paginas/TelaPerfil.html"> Zezinho </a>
-        <a href="/views/paginas/TelaPerfil.html"> Joao </a>
-      </div>
-    </div> 
+  <header class="header">
+    <div class="header-left" onclick="openNav()">
+      <img class="logo-image" src="../img/logo-da-empresa.png">
+      <p class="hamburguer-menu-image">&#9776;</p> 
+      <div class="vertical-decoration-line"></div>
+    </div>
+    <div class="header-right" id="headerRight">
+      <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
+      <img class="header-profile-picture" src="/views/img/conta1.jpg">
+      <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+    </div>
   </header>
-  <main class="recentes">
-    <div class="coluna">
-      <div class="perfil">
-        <img src="/views/img/conta1.jpg" class="perfil-foto">
-        <h2> Zezinho da Silva </h2>
-        <h4> Meninos do Lago </h4>
-        <h4> 13 Anos </h4>
+  <div id="sidebarContainer" class="container-sidebar">
+    <a href="javascript:void(0)" id="closeAnchor" class="close-sidebar" onClick="closeNav()">&#10006</a>
+    <div class="sidebar-element">
+      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+    </div>
+  </div>
+  <div id="dropdownMenuProfile" class="dropdown-menu">
+    <div class="dropdown-menu__element">
+      <img src="../img/user.svg">
+      <p> Perfil </p>
+    </div>
+    <div class="dropdown-menu__element">
+      <img src="../img/log-out.svg">
+      <p> Logout </p>
+    </div>
+  </div>
+  <main>
 
-      </div>
-    </div>
-    <div class="coluna postagem-perfil">
-      <div class="postagem-recente">
-        <img src="/views/img/conta1.jpg" class="perfil-foto-postagem">
-        <p class="texto-postagem"> TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
-        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO  </p>
-      </div>
-      <div class="postagem-recente">
-        <img src="/views/img/conta1.jpg" class="perfil-foto-postagem">
-        <p class="texto-postagem"> TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
-        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO  </p>
-      </div>
-      <div class="postagem-recente">
-        <img src="/views/img/conta1.jpg" class="perfil-foto-postagem">
-        <p class="texto-postagem"> TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
-        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO  </p>
-      </div>
-      <div class="postagem-recente">
-        <img src="/views/img/conta1.jpg" class="perfil-foto-postagem">
-        <p class="texto-postagem"> TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
-        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO  </p>
-      </div>
-      <div class="postagem-recente">
-        <img src="/views/img/conta1.jpg" class="perfil-foto-postagem">
-        <p class="texto-postagem"> TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
-        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO  </p>
-      </div>
-      <div class="postagem-recente">
-        <img src="/views/img/conta1.jpg" class="perfil-foto-postagem">
-        <p class="texto-postagem"> TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
-        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO  </p>
-      </div>
-      <div class="postagem-recente">
-        <img src="/views/img/conta1.jpg" class="perfil-foto-postagem">
-        <p class="texto-postagem"> TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
-        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO  </p>
-      </div>
-    </div>
   </main>
-  <footer class="footer-padrao">
-    <p>&copy; 2023 - Todos os direitos reservados</p>
-      <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
-      <p><a>Termos de uso</a></p>
-      <p><a>Política de privacidade</a></p>
-      <p><a>Sobre nós</a></p>
-  </footer>
+
+  
+
+  <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>
