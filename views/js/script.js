@@ -9,18 +9,12 @@ function closeNav(){
 function openHeaderDrop() {
   let dropTrigger = document.getElementById("headerRight");
   let dropdownContainer = document.getElementById("dropdownMenuProfile");
+  let arrowDrop = document.getElementById("dropdownArrow");
+
 
   dropTrigger.addEventListener("click", function() {
-    if (dropdownContainer.style.display === "" || dropdownContainer.style.display === "none") {
-      dropdownContainer.style.display = "flex";
-    } else {
-      dropdownContainer.style.display = "none";
-    }
+    // Toggle the "hidden" class to show/hide the dropdown
+    dropdownContainer.classList.toggle("hidden");
   });
 
-  window.addEventListener("click", function(event) {
-    if (event.target !== dropTrigger && event.target !== dropdownContainer) {
-      dropdownContainer.style.display = "none";
-    }
-  });
 }

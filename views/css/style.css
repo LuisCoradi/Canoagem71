@@ -381,6 +381,10 @@ main {
   color: #535353;
 }
 
+.hidden {
+  display: none;
+}
+
 .dropdown-menu__element {
   flex: 1;
   display: flex;
