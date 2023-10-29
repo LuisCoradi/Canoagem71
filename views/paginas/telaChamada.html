@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Chamada</title>
-    <link rel="stylesheet" href="/views/css/style.css">
-    <script type="text/javascript" src="/views/js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -16,8 +16,24 @@
         </div>
         <div class="header-right" id="headerRight">
           <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
-          <img class="header-profile-picture" src="/views/img/conta1.jpg">
+          <img class="header-profile-picture" src="../img/conta1.jpg">
           <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+        </div>
+        <div id="sidebarContainer" class="container-sidebar hidden">
+            <a href="javascript:void(0)" id="closeAnchor" class="close-sidebar" onClick="closeNav()">&#10006</a>
+            <div class="sidebar-element">
+              <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+            </div>
+          <div id="dropdownMenuProfile" class="dropdown-menu" style="display: none">
+            <div class="dropdown-menu__element">
+              <img src="../img/user.svg">
+              <p> Perfil </p>
+            </div>
+            <div class="dropdown-menu__element">
+              <img src="../img/log-out.svg">
+              <p> Logout </p>
+            </div>
+            </div>
         </div>
     </header>
       

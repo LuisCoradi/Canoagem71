@@ -1,23 +1,41 @@
-function openNav(){
-  document.getElementById("sidebarContainer").style.width = "250px"
+function operateNav(){
+    let navbar = document.getElementById("sidebarContainer");
+    let navbarElement = document.getElementById("sidebarElement");
+
+    if (navbar.style.width == "0px" || navbar.style.width == "") {
+        navbarElement.style.visibility = "visible";
+        navbar.style.visibility = "visible";
+        navbar.style.width = "25vh";
+    } else {
+        navbarElement.style.visibility = "hidden";
+        navbar.style.visibility = "hidden";
+        navbar.style.width = "0px";
+    }
 }
 
-function closeNav(){
-  document.getElementById("sidebarContainer").style.width = "0px"
+function operateDrop(){
+    let dropdown = document.getElementById("dropdownMenuProfile");
+    let dropdownElement = document.getElementById("dropdownElement");
+    let dropArrow = document.getElementById("dropdownArrow");
+
+    if (dropArrow.style.transform === 'rotate(-180deg)') {
+        dropArrow.style.transform = 'none';
+    } else {
+        dropArrow.style.transform = 'rotate(-180deg)';
+    }
+    
+
+    if (dropdown.style.height == "0px" || dropdown.style.height == "") {
+        dropdownElement.style.visibility = "visible";
+        dropdown.style.visibility = "visible";
+        dropdown.style.height = "20vh";
+    } else {
+        dropdownElement.style.visibility = "hidden"
+        dropdown.style.visibility = "hidden"
+        dropdown.style.height = "0px";
+    }
 }
 
-function openHeaderDrop() {
-  let dropTrigger = document.getElementById("headerRight");
-  let dropdownContainer = document.getElementById("dropdownMenuProfile");
-  let arrowDrop = document.getElementById("dropdownArrow");
-
-
-  dropTrigger.addEventListener("click", function() {
-    // Toggle the "hidden" class to show/hide the dropdown
-    dropdownContainer.classList.toggle("hidden");
-  });
-
-}
 
 ////////////////////////////////////////chamada////////////////////////////////////////
 (function () {
