@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Meninos do Lago</title>
+  <link rel="stylesheet" href="/views/css/style.css">
+  <script type="text/javascript" src="/views/js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left" onclick="openNav()">
+      <img class="logo-image" src="/views/img/logo-da-empresa.png">
+      <p class="hamburguer-menu-image">&#9776;</p>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+      </div>
+    </div>
+    <div class="header-middle">
+      <div class="vertical-decoration-line"></div>
+      <div class="container-searchbar">
+        <button class="header-searchbar-button"><img src="/views/img/search.svg"></button>
+        <input class="header-searchbar" placeholder="Buscar..." type="text">
+      </div>
+    </div>
+    <div class="header-right">
+      <img class="header-profile-picture" src="/views/img/conta1.jpg">
+      <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+    </div>
+  </header>
+  <main class="conteudo-padrao">
+    <div class="container-main">
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/views/img/img1.jpg" style="width:100%">
+          <div class="text"> Placeholder </div>
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="/views/img/img2.jpg" style="width:100%">
+          <div class="text"> Placeholder </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/views/img/img3.jpg" style="width:100%">
+          <div class="text"> Placeholder </div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="flex-recentes-hub">
+      <div class="flex-recentes">
+        <div class="recente-noticia">
+          <div>
+            <img class="img-noticia" src="/views/img/noticia1.jpg">
+          </div>
+          <div>
+            <h4><a href=""></a>Novas Canoas entregues por meio de doação!!</a></h4>
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
+        <div class="recente-noticia">
+          <div>
+            <img class="img-noticia" src="/views/img/noticia2.jpg">
+          </div>
+          <div>
+            <h4><a href=""></a>Novas Canoas entregues por meio de doação!!</a></h4>
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
+        <div class="recente-noticia">
+          <div>
+            <img class="img-noticia" src="/views/img/noticia3.jpg">
+          </div>
+          <div>
+            <h4><a href=""></a>Novas Canoas entregues por meio de doação!!</a></h4>
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-recentes">
+        <div class="recente-postagem">
+          <div class="header-post">
+            <img class="post-picture-profile" src="/views/img/conta1.jpg">
+            <h4><a href=""></a>Zeca Figueiredo</a></h4>
+          </div>
+          <div class="main-post">
+            <p><a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-padrao">
+      <div>
+          <p>&copy; 2023 - Todos os 
+            direitos reservados</p>
+          <p>Entre em contato pelo 
+            e-mail: groyerccl@gmail.com</p>
+          <p>Termos de uso<a href=""></a></p>
+          <p>Política de privacidade<a href=""></a></p>
+          <p>Sobre nós<a href=""></a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

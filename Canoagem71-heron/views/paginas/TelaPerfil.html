@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Página de Perfil </title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left" onclick="openNav()">
+      <img class="logo-image" src="../img/logo-da-empresa.png">
+      <p class="hamburguer-menu-image">&#9776;</p> 
+      <div class="vertical-decoration-line"></div>
+    </div>
+    <div class="header-right" id="headerRight">
+      <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
+      <img class="header-profile-picture" src="/views/img/conta1.jpg">
+      <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+    </div>
+  </header>
+  <div id="sidebarContainer" class="container-sidebar hidden">
+    <a href="javascript:void(0)" id="closeAnchor" class="close-sidebar" onClick="closeNav()">&#10006</a>
+    <div class="sidebar-element">
+      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+    </div>
+  </div>
+  <div id="dropdownMenuProfile" class="dropdown-menu hidden">
+    <div class="dropdown-menu__element">
+      <img src="../img/user.svg">
+      <p> Perfil </p>
+    </div>
+    <div class="dropdown-menu__element">
+      <img src="../img/log-out.svg">
+      <p> Logout </p>
+    </div>
+  </div>
+  <main>
+
+  </main>
+
+  
+
+  <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

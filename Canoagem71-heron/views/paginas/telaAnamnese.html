@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .anamnese-form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    section {
+        margin-top: 20px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+    
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    </style>
+<body>
+    <form class="anamnese-form">
+        <h1>ANAMNESE</h1>
+    <p>
+        <h3>QUESTIONÁRIO SOBRE ESTADO DE SAÚDE</h3>
+        <style>
+            h3{
+                text-align: center;
+            }
+        </style>
+    </p>
+        <main>
+            <h2>1. Identificação</h2>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" required>
+
+            <h2>2. Atividades de Vida Diária</h2>
+            <label for="horastrabalhadas">Numero de horas trabalhadas por semana</label>
+            <p>
+                <input type="radio" id="menosde20" name="menosde20" value="menosde20">Menos de 20
+                <input type="radio" id="20a40" name="20a40" value="20a40">20 a 40  
+                <input type="radio" id="41a60" name="41a60" value="41a60">41 a 60
+                <input type="radio" id="maisde60" name="maisde60" value="maisde60">Mais de 60
+            </p>
+
+            <label for="atividadesnotrabalho">Atividades desempenhadas no trabalho: (+ de 25%)</label>
+            <p>
+                <input type="radio" id="sentarnacadeira" name="sentarnacadeira" value="sentarnacadeira">Sentar na Cadeira
+                <input type="radio" id="levantarpesos" name="levantarpesos" value="levantarpesos">Levantar ou carregar pesos
+                <input type="radio" id="ficardepe" name="ficardepe" value="ficardepe">Ficar de Pé
+            </p>
+            <p>
+                <input type="radio" id="Caminhar" name="Caminhar" value="Caminhar">Caminhar
+                <input type="radio" id="dirigir" name="dirigir" value="dirigir">Dirgir
+                <input type="radio" id="outros" name="outros" value="outros">Outros
+            </p>
+            <label for="observacoes_atividadesvidadiaria">Observações:</label>
+            <textarea id="observacoes_atividadesvidadiaria" name="observacoes_atividadesvidadiaria" rows="5"></textarea>
+
+            <h2>3. Histórico Médico</h2>
+            <label for="ultimoexamefisico">Data do último exame físico e/ou Médico:</label>
+            <textarea id="observacoes_ultimoexamefisico" name="observacoes_ultimoexamefisico" rows="4"></textarea>
+
+            <label for="cardiopatia">Marque aquele(s) que tenha(m) tido alguma cardiopatia antes do 50 anos:</label>
+            <p>
+                <input type="radio" id="pai" name="pai" value="pai">Pai
+                <input type="radio" id="mae" name="mae" value="mae">Mãe
+                <input type="radio" id="irmao" name="irmao" value="irmao">irmão/irmã
+                <input type="radio" id="avo" name="avo" value="avo">Avô/avó
+            </p>
+
+            <label for="intervencoescirurgias">Marque as intervenções cirúrgicas tido alguma cardiopatia antes do 50 anos:</label>
+            <p>
+                <input type="radio" id="coluna" name="coluna" value="pai">Coluna
+                <input type="radio" id="coracao" name="coracao" value="coracao">Coração
+                <input type="radio" id="articulacao" name="articulacao" value="articulacao">Articulação
+                <input type="radio" id="herniadedisco" name="herniadedisco" value="herniadedisco">Hérnia de Disco
+            </p>
+            <p>
+                <input type="radio" id="rim" name="rim" value="rim">Rim
+                <input type="radio" id="pulmao" name="pulmao" value="pulmao">Pulmão
+                <input type="radio" id="olhos" name="olhos" value="olhos">Olhos
+                <input type="radio" id="outro" name="outro" value="outro">Outro
+            </p>
+
+            <label for="problemasdiagnosticados">Marque o(s) problema(s) abaixo que tenham sido diagnosticado(a) ou tratado(a) por um médico</label>
+            <p>
+                <input type="radio" id="alcoolismo" name="coluna" value="pai">Alcoolismo
+                <input type="radio" id="problemarenal" name="coracao" value="coracao">Probelma Renal
+                <input type="radio" id="enfisema" name="articulacao" value="articulacao">Enfisema
+                <input type="radio" id="anemia" name="herniadedisco" value="herniadedisco">Anemia
+            </p>
+            <p>
+                <input type="radio" id="artrite" name="rim" value="rim">Artrite
+                <input type="radio" id="problemasoculares" name="pulmao" value="pulmao">Problemas Oculares
+                <input type="radio" id="ulcera" name="olhos" value="olhos">Úlcera
+                <input type="radio" id="asma" name="outro" value="outro">Asma
+            </p>
+            <p>
+                <input type="radio" id="diabetes" name="rim" value="rim">Diabetes
+                <input type="radio" id="pressaoarterial" name="pulmao" value="pulmao">Pressão Arterial Alta
+                <input type="radio" id="avc" name="olhos" value="olhos">AVC
+                <input type="radio" id="obesidade" name="outro" value="outro">Obesidade
+            </p>
+            <p>
+                <input type="radio" id="problemasmusculares" name="rim" value="rim">Problemas Musculares
+                <input type="radio" id="outros" name="outros" value="outros">Outros
+            </p>
+
+            <label for="observacoes_lesoescorporais">Descreva o(s) medicamento(s) utilizado(s) nos últimos tempos:</label>
+            <textarea id="observacoes_lesoescorporais" name="observacoes_lesoescorporais" rows="5"></textarea>
+
+            <h4> Indique os sintomas, conforme segue:</h4>
+            <label for="tossecomsangue">a) Tosse com Sangue:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="dorabdominal">b) Dor Abdominal:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="dornaspernas">c) Dor nas Pernas:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="dornosbracos">d) Dor nos Braços:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="dornascostasoupescoco">e) Dor nas Costas ou Pescoço:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="dornopeito">f) Dor no Peito:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="doresarticulares">g) Dores Articulares:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="faltadear">h) Falta de ar com esforço leve:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="Sentir-se fraco">i) Sentir-se fraco:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+
+            <label for="tontura">j) Tontura:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+
+            <label for="palpitacaooubatimento">k) Palpitação ou batimento cardíaco acelerado:</label>
+            <p>
+                <input type="radio" id="sempre" name="sempre" value="sempre">Sempre
+                <input type="radio" id="algumasvezes" name="algumasvezes" value="algumasvezes">Algumas Vezes
+                <input type="radio" id="nunca" name="nunca" value="nunca">Nunca
+            </p>
+
+            <label for="alergia">Voce possui alguma alergia:</label>
+            <p>
+                <input type="radio" id="sim" name="sim" value="sim">Sim
+                <input type="radio" id="nao" name="nao" value="nao">Não
+                <p>
+                    <label for="">Qual(is)</label>
+                    <input type="text" id="qual" name="qual">
+                </p>
+            </p>
+
+            <label for="acidenteoulesao">Nos últimos tempos, voce sofeu algum acidente ou lesão ósteo-articular:</label>
+            <p>
+                <input type="radio" id="sim" name="sim" value="sim">Sim
+                <input type="radio" id="nao" name="nao" value="nao">Não
+                <p>
+                    <label for="">Qual(is)</label>
+                    <input type="text" id="qual" name="qual">
+                </p>
+            </p>
+
+            <label for="restricaoatividadefisica">Voce Possui alguma restrição á pratica de atividade fisica:</label>
+            <p>
+                <input type="radio" id="sim" name="sim" value="sim">Sim
+                <input type="radio" id="nao" name="nao" value="nao">Não
+                <p>
+                <label for="">Qual(is)</label>
+                <input type="text" id="qual" name="qual">
+                </p>
+            </p>
+            <h2>4. Comportamento relacionado á saúde</h2>
+            <label for="vocefuma">Voce fuma atualmente:</label>
+            <p>
+                <input type="radio" id="sim" name="sim" value="sim">Sim
+                <input type="radio" id="nao" name="nao" value="nao">Não
+                <p>
+                    <label for="qual">Qual(is)</label>
+                    <input type="text" id="qual" name="qual">
+                    </p>
+                    <p>
+                        <label for="frequencia">Frequencia</label>
+                        <input type="text" id="frequencia" name="frequencia">
+                    </p>
+                    <p>
+                        <label for="">Duração</label>
+                        <input type="text" id="qual" name="qual">
+                        </p>
+            </p>
+
+        <h2>5. Objetivos com relação á atividade física</h2>
+        <p> 
+            <input type="radio" id="estetica" name="estetica" value="estetica">Estética
+            <input type="radio" id="lazer" name="lazer" value="lazer">Lazer
+            <input type="radio" id="terapeutico" name="terapeutico" value="terapeutico">Terapeutico
+            <input type="radio" id="Condicionamento" name="Condicionamento" value="Condicionamento">Condicionamento fisico
+            <input type="radio" id="convivio" name="convivio" value="convivio">Convívio social
+            <input type="radio" id="Emagrecimento" name="Emagrecimento" value="Emagrecimento">Emagrecimento
+            <p>
+                <label for="">Outro(s)</label>
+                <input type="text" id="outros" name="outros">
+            </p>
+        </p>
+
+            <h2>6. Comentários Gerais</h2>
+            <label for="observacoes"></label>
+            <textarea id="observacoes" name="observacoes" rows="20"  placeholder="Caso voce tenha alguma informação para acrescentar, que nao tenha sido perguntada neste questionário de saúde, favor registrar neste espaço"></textarea>
+        </main>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
