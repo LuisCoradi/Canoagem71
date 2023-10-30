@@ -40,11 +40,12 @@ body {
   flex-direction: column;
 }
 
-main {
-  align-items: center;
-  justify-content: center;
+.grid-main {
+  display: grid;
+  background-color: #c0faff;
+  grid-template-areas: 
+    'noticia noticia misc';
 }
-
 /*------------------------------------------------------------*/
 
 /*footer*/
@@ -700,4 +701,16 @@ th.name-col {
 }
 td.name-col {
   border-right: 2px solid rgb(227, 227, 227);
+}
+
+.index-noticia {
+  grid-area: noticia;
+  background-color: lightcoral;
+  margin-bottom: 200px;
+}
+
+.index-misc {
+  grid-area: misc;
+  background-color: lightblue;
+  margin-bottom: 200px;
 }
