@@ -714,3 +714,121 @@ td.name-col {
   background-color: lightblue;
   margin-bottom: 200px;
 }
+
+/*------------------------------------------------------------*/
+
+/* Profile */
+/*------------------------------------------------------------*/
+
+
+/* Estilos para a seção do perfil */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/* Estilos para as informações do perfil */
+.profile-info {
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+  font-family: arial;
+  background-color: white;
+  margin-left: 2vh;
+  border-radius: 1vh;
+  width: 125vh; 
+  height: 80vh; 
+  border: 2px solid rgb(215, 215, 215);
+}
+
+.profile-info h2 {
+  max-width: 40vh;
+  font-size: 20px;
+  padding-top: 3vh;
+  padding-left: 3vh;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  padding-top: 3vh;
+  padding-left: 3vh;
+}
+
+.card {
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+  width: 50vh;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  border-radius: 1vh;
+  border: 2px solid rgb(215, 215, 215);
+
+}
+.perfil-profile-picture {
+  border-radius: 50%;
+  width: 30vh;
+  height: 30vh;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-bottom: 2vh;
+  border: 2px solid rgb(215, 215, 215);
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+}  
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button.contact-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button.contact-button:hover {
+  opacity: 0.7;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card a:hover {
+  opacity: 0.7;
+}
+
+.separation-line{
+  height:2px;
+  background-color: rgb(215, 215, 215);
+}
+
+.area-btns{
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+.btn-perfil{
+  display: inline-block;
+  padding: 30px 25px;
+  text-decoration: none;
+  background-color: rgb(252, 174, 84);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(215, 215, 215);
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+}
+
+.btn-perfil:hover{
+    background-color: #a8c2e6;
+    color: white;
+}
