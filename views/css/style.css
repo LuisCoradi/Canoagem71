@@ -11,6 +11,7 @@ a:visited {
 
 .center-text {
   text-align: center;
+  padding: 5vh;
 }
 
 .hidden {

@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" href="/views/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="/views/js/script.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="header-left" onclick="openNav()">
+        <div class="header-left" onclick="operateNav()">
           <img class="logo-image" src="../img/logo-da-empresa.png">
           <p class="hamburguer-menu-image">&#9776;</p> 
           <div class="vertical-decoration-line"></div>
         </div>
-        <div class="header-right" id="headerRight">
+        <div class="header-right" id="headerRight" onclick="operateDrop()">
           <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
-          <img class="header-profile-picture" src="/views/img/conta1.jpg">
+          <img class="header-profile-picture" src="../img/conta1.jpg">
           <h2 class="header-profile-name"> Zeca Figueiredo </h2>
         </div>
     </header>
-
+    <div id="sidebarContainer" class="container-sidebar">
+      <div class="sidebar-element" id="sidebarElement">
+        <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+      </div>
+      <div class="sidebar-element" id="sidebarElement">
+        <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+      </div>
+      <div class="sidebar-element" id="sidebarElement">
+        <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+      </div>
+      <div class="sidebar-element" id="sidebarElement">
+        <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+      </div>
+    </div>
+    <div id="dropdownMenuProfile" class="dropdown-menu">
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="TelaPerfil.html"><img src="../img/user.svg"></a>
+        <p> Perfil </p>
+      </div>
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="../../index.html"><img src="../img/log-out.svg"></a>
+        <p> Logout </p>
+      </div>
+    </div>
   <div class="profile-container">
     <div class="card">
-      <img class="perfil-profile-picture" src="/views/img/conta1.jpg" alt="Zeca" >
+      <img class="perfil-profile-picture" src="../img/conta1.jpg" alt="Zeca" >
       <h1>Zeca Figueredo</h1>
       <p>Meninos do Lago</p>
       <div style="margin: 24px 0;">
@@ -51,21 +73,11 @@
       <div class="area-btns">
         <a href="telaAnamnese.html" class="btn-perfil">Teste de Anamnese</a>
       </div>
-      <div class="area-btns">
-        <a href="" class="btn-perfil">Resultados de Anamnese</a>
-      </div>
+
   </div>
 </div>
     
-
-    <footer class="footer-padrao">
-      <p>&copy; 2023 - Todos os direitos reservados</p>
-        <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
-        <p><a>Termos de uso</a></p>
-        <p><a>Política de privacidade</a></p>
-        <p><a>Sobre nós</a></p>
-    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/views/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
