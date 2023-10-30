@@ -1,13 +1,10 @@
 function operateNav(){
-    let navbar = document.getElementById("sidebarContainer");
-    let navbarElement = document.getElementById("sidebarElement");
+    let navbar = document.getElementById("mySidebar");
 
     if (navbar.style.width == "0px" || navbar.style.width == "") {
-        navbarElement.style.visibility = "visible";
         navbar.style.visibility = "visible";
-        navbar.style.width = "25vh";
+        navbar.style.width = "30vh";
     } else {
-        navbarElement.style.visibility = "hidden";
         navbar.style.visibility = "hidden";
         navbar.style.width = "0px";
     }

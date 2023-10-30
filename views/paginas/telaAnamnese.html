@@ -2,325 +2,417 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+
+        h5,
+        h4,
+        label {
+            margin: 10px;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            padding: 5vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.788);
+            color: rgb(255, 255, 255);
+        }
+
+        .form-section:first-of-type{
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .form-section:last-of-type{
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .row-form {
+            display: flex;
+            align-self: center;
+            margin: 5vh;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .form-input__text {
+            align-self: center;
+            margin-bottom: 5vh;
+        }
+
+        .form-section label {
+            margin-left: 1vh;
+        }
+
+        .form-section input[type="checkbox"] {
+            margin-left: 5vh;
+        }
+
+        .form-section input,
+            textarea {
+            outline: 0;
+        }
+
+        /* Additional CSS for checkboxes and labels in columns */
+         .row-form__anamnese {
+            display: flex;
+            align-items: center;
+        }
+
+        .titulo-anamnese {
+            border-bottom: 2px solid rgb(227, 124, 21);
+        }
+
+        .check-anamnese {
+            outline: 0;
+        }
+
+        .form-input__text {
+            width: 65vh;
+            height: 20vh;
+            border-radius: 10px;
+        }
+
+        .minor-text-anamnese {
+            width: 40vh;
+            height: 3vh;
+        }
+
+        textarea {
+            border-radius: 10px;
+            border: 2px solid rgb(227, 124, 21);
+        }
+
+        input[type="date"],
+            input[type="text"],
+            input[type="number"]{
+                border-radius: 5px;
+                border: 2px solid rgb(227, 124, 21);
+        }
+
+        input[type="submit"]{
+            background-color: rgb(227, 124, 21);
+            color: white;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 5px;
+            border: 2px solid white;
+            font-size: 16px;
+        }
+
+        input[type="number"]{
+            border: 2px solid rgb(227, 124, 21);
+
+        }
+    </style>
 </head>
-
 <body class="body-anamnese">
+    <header class="header">
+        <div class="header-left" onclick="operateNav()">
+          <img class="logo-image" src="../img/logo-da-empresa.png">
+          <p class="hamburguer-menu-image">&#9776;</p> 
+          <div class="vertical-decoration-line"></div>
+        </div>
+        <div class="header-right" id="headerRight" onclick="operateDrop()">
+          <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
+          <img class="header-profile-picture" src="../img/conta1.jpg">
+          <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+      <a href="../../index.html">Portal</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Galeria</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Horário de Ônibus</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Resultados Esportivos</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Biblioteca</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Tomadas de Preço</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Ouvidoria</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Relatórios</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Programas</a>
+      </div>
+    </div>
+    <div id="dropdownMenuProfile" class="dropdown-menu">
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="TelaPerfil.html"><img src="../img/user.svg"></a>
+        <p> Perfil </p>
+      </div>
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="../../index.html"><img src="../img/log-out.svg"></a>
+        <p> Logout </p>
+      </div>
+    </div>
     <main class="flex-main center-text">
-        <div>
-            <h1>ANAMNESE</h1>
-            <h3>QUESTIONÁRIO SOBRE ESTADO DE SAÚDE</h3>
-        </div>
-
-        <div>
-            <h4>1. IDENTIFICAÇÃO</h4>
-        </div>
-
         <form class="form-identificacao">
-            <div>
+            <div class="form-section titulo-anamnese">
+                <h1>ANAMNESE</h1>
+                <h3>QUESTIONÁRIO SOBRE ESTADO DE SAÚDE</h3>
+            </div>
+            <div class="form-section">
+                <h4>1. IDENTIFICAÇÃO</h4>
+                
                 <label for="nomeid">NOME:</label>
-                <input type="text">
+                <input type="text"class="minor-text-anamnese">
+                
                 <label for="sexoid">SEXO:</label>
-                <input type="text">
+                <input type="text"class="minor-text-anamnese">
+                
                 <label for="dataid">DATA DE NASCIMENTO:</label>
-                <input type="text">
+                <input type="date">
+                
                 <label for="idadeid">IDADE:</label>
-                <input type="text">
-           </div>
-        </form>
-        
-        <div>
-            <h4>2. ATIVIDADES DA VIDA DIÁRIA</h4>
-        </div>
-
-        <form>
-            <div>
-                <h5>Número de horas trabalhadas por semana:</h5>
-                <label for="menosvinte">Menos de 20</label>
-                <input type="checkbox">
-                <label for="vintequarenta">20 a 40</label>
-                <input type="checkbox">
-                <label for="quarentasesenta">41 a 60</label>
-                <input type="checkbox">
-                <label for="maissessenta">Mais de 60</label>
-                <input type="checkbox">
+                <input type="number">
             </div>
-            <div>
-                <h5>Atividades desempenadas no trabalho (+ de 25%)</h5>
-                <label for="cadeiratrab">Sentar na cadeira</label>
-                <input type="checkbox">
-                <label for="pesostrab">Levantar ou carregar pesos</label>
-                <input type="checkbox">
-                <label for="depetrab">Ficar de pé</label>
-                <input type="checkbox">
-                <label for="caminhartrab">Caminhar</label>
-                <input type="checkbox">
-                <label for="dirigirtrab">Dirigir</label>
-                <input type="checkbox">
+            
+            <div class="form-section">
+                <h4>2. ATIVIDADES DA VIDA DIÁRIA</h4>
+                <div>
+                    <h5>Número de horas trabalhadas por semana:</h5>
+                    <label>
+                        <input type="radio" name="horasSemana" value="menosvinte" id="menosvinte">
+                        Menos de 20
+                    </label>
+                    <label>
+                        <input type="radio" name="horasSemana" value="vintequarenta" id="vintequarenta">
+                        20 a 40
+                    </label>
+                    <label>
+                        <input type="radio" name="horasSemana" value="quarentasesenta" id="quarentasesenta">
+                        41 a 60
+                    </label>
+                    <label>
+                        <input type="radio" name="horasSemana" value="maissessenta" id="maissessenta">
+                        Mais de 60
+                    </label>
+                </div>                
+            </div>
+            <div class="form-section">
+                <h5>Atividades desempenhadas no trabalho (+ de 25%)</h5>
+                <div class="row-form">
+                    <input class="check-anamnese" type="checkbox" id="cadeiratrab" class="form-input__text">
+                    <label for="cadeiratrab">Sentar na cadeira</label>
+                    
+                    <input class="check-anamnese" type="checkbox" id="pesostrab" class="form-input__text">
+                    <label for="pesostrab">Levantar ou carregar pesos</label>
+                    
+                    <input class="check-anamnese" type="checkbox" id="depetrab" class="form-input__text">
+                    <label for="depetrab">Ficar de pé</label>
+                    
+                    <input class="check-anamnese" type="checkbox" id="caminhartrab" class="form-input__text">
+                    <label for="caminhartrab">Caminhar</label>
+                    
+                    <input class="check-anamnese" type="checkbox" id="dirigirtrab" class="form-input__text">
+                    <label for="dirigirtrab">Dirigir</label>
+                </div>
                 <label for="outrostrab">Outros</label>
-                <input type="checkbox">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
-            <div>
-                <label for="obsvidadiaria">Observações</label>
-                <input type="text">
-            </div>
-        </form>
-        
-        <div>
-            <h4>3. HISTORICO MÉDICO</h4>
-        </div>
-        
-        <form>
-            <div>
+
+            <div class="form-section">
+                <h4>3. HISTÓRICO MÉDICO</h4>
                 <label for="dataexame">Data do último exame físico e/ou médico:</label>
-                <input type="text">
+                <input type="date" id="dataexame">
             </div>
-            <div>
+            <div class="form-section">
                 <h5>Marque aqueles que tenham tido alguma cardiopatia antes dos 50 anos:</h5>
-                <label for="paicardiopatia">Pai</label>
-                <input type="checkbox">
-                <label for="maecardiopatia">Mae</label>
-                <input type="checkbox">
-                <label for="irmaocardiopatia">Irmão ou Irmã</label>
-                <input type="checkbox">
-                <label for="avocardiopatia">Avô ou Avó</label>
-                <input type="checkbox">
+                <div>
+                    <input class="check-anamnese" type="checkbox" id="paicardiopatia">
+                    <label for="paicardiopatia">Pai</label>
+                    
+                    <input class="check-anamnese" type="checkbox" id="maecardiopatia">
+                    <label for="maecardiopatia">Mãe</label>
+                    
+                    <input class="check-anamnese" type="checkbox" id="irmaocardiopatia">
+                    <label for="irmaocardiopatia">Irmão ou Irmã</label>
+                    
+                    <input class="check-anamnese" type="checkbox" id="avocardiopatia">
+                    <label for="avocardiopatia">Avô ou Avó</label>
+                </div>
             </div>
-            <div>
+            <div class="form-section">
                 <h5>Marque os problemas abaixo que tenham sido diagnosticados ou tratados por um médico</h5>
-                <label for="alcoolismoprob">Alcoolismo</label>
-                <input type="checkbox">
-                <label for="renalprob">Problema Renal</label>
-                <input type="checkbox">
-                <label for="enfisemaprob">Enfisema</label>
-                <input type="checkbox">
-                <label for="anemiaprob">Anemia</label>
-                <input type="checkbox">
-                <label for="artriteprob">Artrite</label>
-                <input type="checkbox">
-                <label for="ocularprob">Problemas Oculares</label>
-                <input type="checkbox">
-                <label for="ulceraprob">Úlcera</label>
-                <input type="checkbox">
-                <label for="asmaprob">Asma</label>
-                <input type="checkbox">
-                <label for="diabetesprob">Diabetes</label>
-                <input type="checkbox">
-                <label for="pressaoaltaprob">Pressão Arterial Alta</label>
-                <input type="checkbox">
-                <label for="avcprob">AVC</label>
-                <input type="checkbox">
-                <label for="obesidadeprob">Obesidade</label>
-                <input type="checkbox">
-                <label for="muscularprob">Problemas Músculares</label>
-                <input type="checkbox">
+                <div>
+                    <div class="row-form">
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="alcoolismoprob">
+                            <label for="alcoolismoprob">Alcoolismo</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="renalprob">
+                            <label for="renalprob">Problema Renal</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="enfisemaprob">
+                            <label for="enfisemaprob">Enfisema</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="anemiaprob">
+                            <label for="anemiaprob">Anemia</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="artriteprob">
+                            <label for="artriteprob">Artrite</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="ocularprob">
+                            <label for="ocularprob">Problemas Oculares</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="ulceraprob">
+                            <label for="ulceraprob">Úlcera</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="asmaprob">
+                            <label for="asmaprob">Asma</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="diabetesprob">
+                            <label for="diabetesprob">Diabetes</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="pressaoaltaprob">
+                            <label for="pressaoaltaprob">Pressão Arterial Alta</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="avcprob">
+                            <label for="avcprob">AVC</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="obesidadeprob">
+                            <label for="obesidadeprob">Obesidade</label>
+                        </div>
+                        <div class="row-form__anamnese">
+                            <input class="check-anamnese" type="checkbox" id="muscularprob">
+                            <label for="muscularprob">Problemas Musculares</label>
+                        </div>
+                    </div>
+                </div>
+                
                 <label for="outrosprob">Outros:</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
-        </form>
-        <form>
-            <div>
+            <div class="form-section">
                 <label for="medicamentos">Descreva os medicamentos utilizados nos últimos tempos</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
-        </form>
-        <form> 
-            <div>
+            <div class="form-section">
                 <h5>Indique os sintomas, conforme segue:</h5>
                 <div>
                     <p>Tosse com sangue:</p>
+                    <input type="radio" id="sempretosse" name="tosse">
                     <label for="sempretosse">Sempre</label>
-                    <input type="checkbox">
+                    
+                    <input type="radio" id="vezestosse" name="tosse">
                     <label for="vezestosse">Algumas vezes</label>
-                    <input type="checkbox">
+                    
+                    <input type="radio" id="nuncatosse" name="tosse">
                     <label for="nuncatosse">Nunca</label>
-                    <input type="checkbox">
                 </div>
-                <div>
-                    <p>Dor abdominal:</p>
-                    <label for="sempredorabdominal">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesdorabdominal">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncadorabdominal">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Dor nas pernas:</p>
-                    <label for="sempredorpernas">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesdorpernas">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncadorpernas">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Dor nos braços:</p>
-                    <label for="sempredorbracos">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesdorbracos">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncadorbracos">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Dor nas costas ou pescoço:</p>
-                    <label for="sempredorcostaspescoco">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesdorcostaspescoco">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncadorcostaspescoco">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Dor no peito:</p>
-                    <label for="sempredorpeito">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesdorpeito">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncadorpeito">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Dor nas articulacoes:</p>
-                    <label for="sempredorarticulacao">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesdorarticulacao">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncadorarticulacao">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Falta de ar com esforço leve:</p>
-                    <label for="semprefaltadearleve">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesfaltadearleve">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncafaltadearleve">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Sentir-se fraco:</p>
-                    <label for="sempresentirfraco">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezessentirfraco">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncasentirfraco">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Tontura:</p>
-                    <label for="sempretontura">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezestontura">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncatontura">Nunca</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Palpitação ou batimento cardíaco acelerado:</p>
-                    <label for="semprebatimentoacelerado">Sempre</label>
-                    <input type="checkbox">
-                    <label for="vezesbatimentoacelerado">Algumas vezes</label>
-                    <input type="checkbox">
-                    <label for="nuncabatimentoacelerado">Nunca</label>
-                    <input type="checkbox">
-                </div>
+                
             </div>
-        </form>
-        <form>
-            <div>
+            <div class="form-section">
                 <h5>Você possui alguma alergia?</h5>
-                <label for="simalergia">Sim</label>
-                <input type="checkbox">
-                <label for="simalergia">Não</label>
-                <input type="checkbox">
-                <label for="simalergia">Quais?</label>
-                <input type="text">
+                <div class="row-form">
+                    <input type="radio" id="simalergia">
+                    <label for="simalergia">Sim</label>
+                    
+                    <input type="radio" id="naoalergia">
+                    <label for="naoalergia">Não</label>
+                </div>                    
+                <label for="quaisalergia">Quais?</label>
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>    
             </div>
-        </form>
-        <form>
-            <div>
-                <h5>Nos últimos tempos, você sofreu algum acidente ou lesão ósteo-articular?</h5>
-                <label for="simlesãoacidente">Sim</label>
-                <input type="checkbox">
-                <label for="simalesãoacidente">Não</label>
-                <input type="checkbox">
-                <label for="simlesãoacidente">Quais?</label>
-                <input type="text">
-            </div>
-        </form>
-        <form>
-            <div>
-                <h5>Você possui alguma restrição à prática de atividade física?</h5>
-                <label for="simrestriçãoatividade">Sim</label>
-                <input type="checkbox">
-                <label for="simrestriçãoatividade">Não</label>
-                <input type="checkbox">
-                <label for="simrestriçãoatividade">Quais?</label>
-                <input type="text">
-            </div>
-        </form>
-
-        <div>
-            <h4>4. COMPORTAMENTO RELACIONADO À SAÚDE</h4>
-        </div>
-
-        <form>
-            <div>
+            <div class="form-section">
+                <h4>4. COMPORTAMENTO RELACIONADO À SAÚDE</h4>
                 <h5>Você fuma atualmente?</h5>
-                <label for="simfumante">Sim</label>
-                <input type="checkbox">
-                <label for="simfumante">Não</label>
-                <input type="checkbox">
+                <div class="row-form">
+                    <input type="radio" name="fuma">
+                    <label for="simfumante">Sim</label>
+                    <input type="radio" name="fuma">
+                    <label for="simfumante">Não</label>
+                </div>
                 <label for="textofumante">Se sim, quantos cigarros por dia?</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
+                
+                <h5>Atualmente, você realiza alguma atividade física?</h5>
+                <div class="row-form">
+                    <input type="radio" name="fisica">
+                    <label for="simatividadefisica">Sim</label>
+                    
+                    <input type="radio" name="fisica">
+                    <label for="naoatividadefisica">Não</label>
+                </div>                    
+                <label for="quaisatividadefisica">Quais?</label>
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
+                
+                <label for="quaisatividadefisica">Frequencia:</label>
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
+                
+                <label for="quaisatividadefisica">Duração:</label>
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
-        </form>
-        <form>
-            <h5>Atualmente, você realiza alguma atividade física?</h5>
-            <label for="simatividadefisica">Sim</label>
-            <label for="naoatividadefisica">Não</label>
-            <label for="quaisatividadefisica">Quais?</label>
-            <input type="text">
-            <label for="quaisatividadefisica">Frequencia:</label>
-            <input type="text">
-            <label for="quaisatividadefisica">Duração:</label>
-            <input type="text">
-        </form>
-
-        <div>
-            <h4>5. OBJETIVOS COM RELAÇÃO À ATIVIDADE FÍSICA</h4>
-        </div>
-
-        <form>
-            <label for="esteticaobj">Estética</label>
-            <input type="checkbox">
-            <label for="lazerobj">Lazer</label>
-            <input type="checkbox">
-            <label for="terapeuticoobj">Terapêutico</label>
-            <input type="checkbox">
-            <label for="condicionamentoobj">Condicionamento Físico</label>
-            <input type="checkbox">
-            <label for="convivioobj">Convívio Social</label>
-            <input type="checkbox">
-            <label for="emagrecimentoobj">Emagrecimento</label>
-            <input type="checkbox">
-            <label for="outroobj">Outros:</label>
-            <input type="text">
-        </form>
-
-        <div>
-            <h4>6. COMENTÁRIOS GERAIS</h4>
-        </div>
-
-        <form>
-            <div>
-                <p>Caso você tenha alguma informação para acrescentar, que não tenha sido
-                    perguntada neste questionário de saúde, favor registrar no espaço abaixo
-                </p>
-                <input type="text">
+            <div class="form-section">
+                <h4>5. OBJETIVOS COM RELAÇÃO À ATIVIDADE FÍSICA</h4>
+                <div class="row-form">
+                    <input class="check-anamnese" type="checkbox">
+                    <label for="esteticaobj">Estética</label>
+                    
+                    <input class="check-anamnese" type="checkbox">
+                    <label for="lazerobj">Lazer</label>
+                    
+                    <input class="check-anamnese" type="checkbox">
+                    <label for="terapeuticoobj">Terapêutico</label>
+                    
+                    <input class="check-anamnese" type="checkbox">
+                    <label for="condicionamentoobj">Condicionamento Físico</label>
+                    
+                    <input class="check-anamnese" type="checkbox">
+                    <label for="convivioobj">Convívio Social</label>
+                    
+                    <input class="check-anamnese" type="checkbox">
+                    <label for="emagrecimentoobj">Emagrecimento</label>
+                </div>
+                <label for="outroobj">Outros:</label>
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-section">
+                <h4>6. COMENTÁRIOS GERAIS</h4>
+                <p>Caso você tenha alguma informação para acrescentar, que não tenha sido perguntada neste questionário de saúde, favor registrar no espaço abaixo</p>
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-section">
+                <input type="submit" value="Submit">
             </div>
         </form>
     </main>
+    <script src="../js/script.js"></script>
 </body>
 </html>
