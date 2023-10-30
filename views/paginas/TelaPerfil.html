@@ -9,39 +9,46 @@
 </head>
 <body>
   <header class="header">
-    <div class="header-left" onclick="openNav()">
+    <div class="header-left"  onclick="operateNav()">
       <img class="logo-image" src="../img/logo-da-empresa.png">
       <p class="hamburguer-menu-image">&#9776;</p> 
       <div class="vertical-decoration-line"></div>
     </div>
-    <div class="header-right" id="headerRight">
+    <div class="header-right" id="headerRight" onclick="operateDrop()">
       <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
-      <img class="header-profile-picture" src="/views/img/conta1.jpg">
+      <img class="header-profile-picture" src="../img/conta1.jpg">
       <h2 class="header-profile-name"> Zeca Figueiredo </h2>
     </div>
   </header>
   <div id="sidebarContainer" class="container-sidebar">
-    <a href="javascript:void(0)" id="closeAnchor" class="close-sidebar" onClick="closeNav()">&#10006</a>
-    <div class="sidebar-element">
+    <div class="sidebar-element" id="sidebarElement">
+      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+    </div>
+    <div class="sidebar-element" id="sidebarElement">
+      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+    </div>
+    <div class="sidebar-element" id="sidebarElement">
+      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
+    </div>
+    <div class="sidebar-element" id="sidebarElement">
       <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
     </div>
   </div>
   <div id="dropdownMenuProfile" class="dropdown-menu">
-    <div class="dropdown-menu__element">
+    <div class="dropdown-menu__element" id="dropdownElement">
       <img src="../img/user.svg">
       <p> Perfil </p>
     </div>
-    <div class="dropdown-menu__element">
+    <div class="dropdown-menu__element" id="dropdownElement">
       <img src="../img/log-out.svg">
       <p> Logout </p>
     </div>
-  </div>
   <main>
 
   </main>
 
   
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>
