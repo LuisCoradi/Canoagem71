@@ -8,24 +8,67 @@
     <script type="text/javascript" src="/views/js/script.js"></script>
 </head>
 <body>
-    <header class="header">
-      <div class="header-left" onclick="openNav()">
-        <img class="logo-image" src="../img/logo-da-empresa.png">
-        <p class="hamburguer-menu-image">&#9776;</p> 
-        <div class="vertical-decoration-line"></div>
-      </div>
-      <div class="header-right" id="headerRight">
-        <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
-        <img class="header-profile-picture" src="/views/img/conta1.jpg">
-        <h2 class="header-profile-name"> Zeca Figueiredo </h2>
-      </div>
-    </header>
-
+  <header class="header">
+    <div class="header-left" onclick="operateNav()">
+      <img class="logo-image" src="../img/logo-da-empresa.png">
+      <p class="hamburguer-menu-image">&#9776;</p> 
+      <div class="vertical-decoration-line"></div>
+    </div>
+    <div class="header-right" id="headerRight" onclick="operateDrop()">
+      <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
+      <img class="header-profile-picture" src="../img/conta1.jpg">
+      <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+    </div>
+</header>
+<div id="mySidebar" class="sidebar">
+  <a href="../../index.html">Portal</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Galeria</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Horário de Ônibus</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Resultados Esportivos</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Biblioteca</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Tomadas de Preço</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Ouvidoria</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Relatórios</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Programas</a>
+  </div>
+</div>
+<div id="dropdownMenuProfile" class="dropdown-menu">
+  <div class="dropdown-menu__element" id="dropdownElement">
+    <a href="TelaPerfil.html"><img src="../img/user.svg"></a>
+    <p> Perfil </p>
+  </div>
+  <div class="dropdown-menu__element" id="dropdownElement">
+    <a href="../../index.html"><img src="../img/log-out.svg"></a>
+    <p> Logout </p>
+  </div>
+</div>
       <div class="meses-container">
         <a href="telaChamada.html">Janeiro</a>
-       <!--ADICIONAR RESTO DPS-->
-
-    </div>
+       </div>
 
     <footer class="footer-padrao">
         <p>&copy; 2023 - Todos os direitos reservados</p>
