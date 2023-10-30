@@ -7,9 +7,157 @@
   <link rel="stylesheet" href="/views/css/style.css">
   <script type="text/javascript" src="views/js/script.js"></script>
 </head>
+
+  <style>
+    .flex-container-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .noticia-maior {
+      display: flex;
+      background-color: rgb(206, 206, 206);
+      align-items: center;
+      justify-content: center;
+      padding: 5vh;
+      row-gap: 0px;
+    }
+
+    .noticia-maior__texto:hover {
+      background-color: rgb(222, 222, 222);
+      transition: 0.15s;
+      transform: scale(1.034);
+      cursor: pointer;
+    }
+
+    .noticia-maior__img:hover {
+      opacity: 0.9;
+      transition: 0.15s;
+      transform: scale(1.034);
+      cursor: pointer;
+    }
+
+    .noticia-maior__img {
+      width: 160vh;
+      height: 70vh;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      box-shadow: 3px 10px 10px rgb(174, 174, 174);
+    }
+
+    .noticia-maior__texto {
+      width: 160vh;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10vh;
+      background-color: white;
+      padding-left: 5vh;
+      padding-right: 5vh;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      box-shadow: 3px 10px 10px rgb(174, 174, 174);
+    }
+
+    .noticia-maior__texto p {
+      margin-top: 10vh;
+    }
+    
+    .noticia-maior__texto h1 {
+      margin-top: 10vh;
+    }
+
+    .coluna-noticia {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      border-right: 3px solid orange;
+    }
+
+    .noticia-menor {
+      display: flex;
+      justify-content: center;
+      margin-left: 2vh;
+      margin-top: 5vh;
+    }
+
+    .noticia-menor__img {
+      height: 30vh;
+      width: 40vh;
+      border-radius: 4px;
+    }
+
+    .noticia-menor__texto {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2px;
+    }
+
+    .noticia-menor__texto h3,
+      .noticia-menor__texto p {
+        margin-left: 5vh;
+        margin-right: 5vh;
+      }
+
+    .noticia-menor:hover{
+      opacity: 0.9;
+      transition: 0.15s;
+      transform: scale(1.034);
+      cursor: pointer;
+    }
+
+    .coluna-misc {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(109, 109, 109);
+      align-items: end;
+      margin-left: auto;
+      padding: 10vh;
+      flex: 1;
+      border-left: 3px solid orange;
+    }
+
+    .coluna-misc__ {
+      position: relative;
+      text-align: center;
+    }
+
+    .coluna-misc__img {
+      height: 40vh;
+      width: 60vh;
+      border-radius: 8px;
+      box-shadow: 3px 3px 10px rgb(92, 92, 92);
+    }
+
+    .coluna-misc__img:first-child {
+      margin-bottom: 10vh;
+    }
+
+    .coluna-misc__:hover {
+      opacity: 0.9;
+      transition: 0.15s;
+      transform: scale(1.034);
+      cursor: pointer;
+    }
+
+    .coluna-misc__img__txt {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10.7vh;
+      height: 10vh;
+      background-color: rgba(0, 0, 0, 0.406);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      color: white;
+      font-size: 26px;
+      text-align: center;
+    }
+  </style>
+
 <body>
   <header class="header">
-    <div class="header-left"  onclick="operateNav()">
+    <div class="header-left" onclick="operateNav()">
       <img class="logo-image" src="views/img/logo-da-empresa.png">
       <p class="hamburguer-menu-image">&#9776;</p> 
       <div class="vertical-decoration-line"></div>
@@ -19,35 +167,121 @@
       <img class="header-profile-picture" src="views/img/conta1.jpg">
       <h2 class="header-profile-name"> Zeca Figueiredo </h2>
     </div>
-  </header>
-  <div id="sidebarContainer" class="container-sidebar">
-    <div class="sidebar-element" id="sidebarElement">
-      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
-    </div>
-    <div class="sidebar-element" id="sidebarElement">
-      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
-    </div>
-    <div class="sidebar-element" id="sidebarElement">
-      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
-    </div>
-    <div class="sidebar-element" id="sidebarElement">
-      <a class="sidebar-element__anchor" href="telaTimeline.html"> TIMELINE </a>
-    </div>
+</header>
+<div id="mySidebar" class="sidebar">
+  <a href="index.html">Portal</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
   </div>
-  <div id="dropdownMenuProfile" class="dropdown-menu">
-    <div class="dropdown-menu__element" id="dropdownElement">
-      <img src="/views/img/user.svg">
-      <p> Perfil </p>
-    </div>
-    <div class="dropdown-menu__element" id="dropdownElement">
-      <img src="/views/img/log-out.svg">
-      <p> Logout </p>
-    </div>
+  <a href="#">Galeria</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
   </div>
-  <main class="grid-main">
-    <div class="index-noticia"></div>
-    <div class="index-misc"></div>
+  <a href="#">Horário de Ônibus</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Resultados Esportivos</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Biblioteca</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Tomadas de Preço</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Ouvidoria</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Relatórios</a>
+  <div class="decoration-horizontal-container">
+    <div class="decoration-horizontal-line"></div>
+  </div>
+  <a href="#">Programas</a>
+  </div>
+</div>
+<div id="dropdownMenuProfile" class="dropdown-menu">
+  <div class="dropdown-menu__element" id="dropdownElement">
+    <a href="TelaPerfil.html"><img src="views/img/user.svg"></a>
+    <p> Perfil </p>
+  </div>
+  <div class="dropdown-menu__element" id="dropdownElement">
+    <a href="index.html"><img src="views/img/log-out.svg"></a>
+    <p> Logout </p>
+  </div>
+</div>
+  <main class="flex-main">
+    <div class="noticia-maior">
+      <img class="noticia-maior__img" src="views/img/img1.jpg">
+      <div class="noticia-maior__texto">
+        <h1>Competição Aquática</h1>
+        <div class="decoration-horizontal-line"></div>
+        <p>Em um dia ensolarado, os entusiastas da canoagem esportiva se reuniram na pitoresca "Copa das Águas",
+          um cenário imaginário que abrigaria uma das mais desafiadoras competições aquáticas do ano. Aquecendo
+          motores,
+          remadores de elite de diversas regiões ansiosamente preparavam-se para testar suas habilidades e resistência
+          nos 20 quilômetros do fictício "Rio Desafiador".
+      </div>
+    </div>
+    <div class="flex-container-row">
+      <div class="coluna-noticia">
+        <div class="noticia-menor">
+          <img class="noticia-menor__img" src="views/img/im4.jpg">
+          <div class="noticia-menor__texto">
+            <h3>PARACANOAGEM</h3>
+            <div class="decoration-horizontal-line"></div>
+            <p>Vagas abertas para a paracanoagem!!</p>
+          </div>
+        </div>
+        <div class="noticia-menor">
+          <img class="noticia-menor__img" src="views/img/im4.jpg">
+          <div class="noticia-menor__texto">
+            <h3>PARACANOAGEM</h3>
+            <div class="decoration-horizontal-line"></div>
+            <p>Vagas abertas para a paracanoagem!!</p>
+          </div>
+        </div>
+        <div class="noticia-menor">
+          <img class="noticia-menor__img" src="views/img/im4.jpg">
+          <div class="noticia-menor__texto">
+            <h3>PARACANOAGEM</h3>
+            <div class="decoration-horizontal-line"></div>
+            <p>Vagas abertas para a paracanoagem!!</p>
+          </div>
+        </div>
+        <div class="noticia-menor">
+          <img class="noticia-menor__img" src="views/img/im4.jpg">
+          <div class="noticia-menor__texto">
+            <h3>PARACANOAGEM</h3>
+            <div class="decoration-horizontal-line"></div>
+            <p>Vagas abertas para a paracanoagem!!</p>
+          </div>
+        </div>
+        <div class="noticia-menor">
+          <img class="noticia-menor__img" src="views/img/im4.jpg">
+          <div class="noticia-menor__texto">
+            <h3>PARACANOAGEM</h3>
+            <div class="decoration-horizontal-line"></div>
+            <p>Vagas abertas para a paracanoagem!!</p>
+          </div>
+        </div>
+      </div>
+      <div class="coluna-misc">
+        <div class="coluna-misc__">
+          <img class="coluna-misc__img" src="views/img/img6.jpg">
+          <div class="coluna-misc__img__txt"> Galeria </div>
+        </div>
+        <div class="coluna-misc__">
+          <img class="coluna-misc__img" src="views/img/img5.png">
+          <div class="coluna-misc__img__txt"> Resultados </div>
+        </div>
+      </div>
+    </div>
   </main>
-  
+
 </body>
 </html>
