@@ -22,6 +22,11 @@ body {
   padding-left: 0;
   padding-bottom: 0;
   font-family: 'Roboto', 'sans-sariff';
+  background-color: rgb(239, 239, 231);
+}
+
+.flex-main {
+  display: flex;
 }
 
 main {
@@ -332,6 +337,7 @@ main {
   right: 0;
   border-bottom: 1px solid rgb(214, 214, 214);
   box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .header-left {
@@ -379,6 +385,10 @@ main {
   border-radius: 2px;
   border: 1px solid rgb(55, 137, 0);
   color: #535353;
+}
+
+.hidden {
+  display: none;
 }
 
 .dropdown-menu__element {
@@ -462,75 +472,46 @@ main {
 
 /*Chamada*/
 /*------------------------------------------------------------*/
-
-/*tela de perfil*/
-/*------------------------------------------------------------*/
-.external-flex-profile {
-  display: flex;
-  justify-content: space-between;
-  height: 80vh;
-  width: 75%;
-  border-radius: 4px;
+.chamada {
+  list-style: none;
+  padding: 0;
 }
 
-.profile-section-profile {
+.aluno {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(to left , #fff7ea, rgb(225, 225, 225));
-  width: 40%;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: rgb(219, 219, 219);
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-right: 10px solid rgb(252, 174, 84);
-  border-top: 5px solid rgb(252, 174, 84);
-  border-left: 5px solid rgb(252, 174, 84);
-  border-bottom: 5px solid rgb(252, 174, 84);
+  margin-bottom: 10px;
 }
 
-  .profile-picture-profile {
-    width: 30vh;
-    border-radius: 15vh;
-    border: 2px solid rgb(252, 174, 84);
-  } 
+.aluno img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
 
-  .profile-name-profile,
-    .profile-age-profile {
-    color: rgb(120, 64, 0);
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .profile-name-profile {
-    font-size: 38px;
-  }
-
-  .profile-age-profile {
-    font-size: 28px;
-  }
-
-  .profile-bio-profile {
-    flex: 1;
-    font-size: 18px;
-    font-weight: 400;
-    color: rgb(120, 64, 0) ;
-  }
-
-.post-section-profile {
+.info {
   display: flex;
   flex-direction: column;
-  width: 100vh;
-  background-color: rgb(219, 219, 219);
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left: 10px solid rgb(252, 174, 84);
-  border-top: 5px solid rgb(252, 174, 84);
-  border-right: 5px solid rgb(252, 174, 84);
-  border-bottom: 3px solid rgb(252, 174, 84);
 }
+
+.nome {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.presenca {
+  margin-top: 10px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
 /*------------------------------------------------------------*/
 
 /* posts */
@@ -570,26 +551,30 @@ main {
 }
 /*------------------------------------------------------------*/
 
-
-/*Tabela Chamada*/
+/* Chamada */
 /*------------------------------------------------------------*/
-th {
+
+.table-row__chamada th,
+  .student th {
   background-color: orange;
   color: #fff;
   padding: 0.5em 1em;
+  border-radius: 2px;
 }
 
-td {
+.table-row__chamada td, 
+  .student td{
   border-top: 1px solid #eee;
   padding: 0.5em 1em;
+  border-radius: 2px;
 }
 
-input {
+.table-row__chamada input {
   cursor: pointer;
 }
 
-/* Tipos de Colunas */
-/*  Total de Faltas */
+/* Tipos de Colunas /
+/  Total de Faltas */
 th.missed-col {
   background-color: #f00;
 }
@@ -599,55 +584,150 @@ td.missed-col {
   color: #f00;
   text-align: center;
 }
-/* Nome */
+
 .name-col {
   text-align: left;
 }
 .table-container{
-  max-width: 70%; /* Ajuste a largura máxima conforme necessário */
-  overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
-  justify-content: space-between; /* ou space-around */
+  max-width: 70%;
+  overflow-x: auto;
+  justify-content: space-between;
   align-items: center;
   height: 70vh;
   margin: 0;
-
-
 }
-/* Fixa a primeira coluna */
+
 th.name-col,
 td.name-col {
     position: sticky;
     left: 0;
-    background-color: #fff; /* Para manter a cor de fundo padrão */
-    z-index: 1; /* Garante que fique sobre o restante da tabela */    
+    background-color: #fff;
+    z-index: 1;
 
 }
 th.name-col {
-  background-color: orange; /* Adiciona cor de fundo */
-  color: #fff; /* Cor do texto do cabeçalho */
-  text-align: center; /* Centraliza o conteúdo da tabela */
-}
-/*------------------------------------------------------------*/
-
-
-/*Botões de meses da Chamada*/
-/*------------------------------------------------------------*/
-.meses-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 200px); /* Ajuste conforme necessário */
-}
-
-.meses-container a {
-  display: block;
-  width: 200px;
-  padding: 10px;
-  margin: 10px auto;
+  background-color: orange;
+  color: #fff;
   text-align: center;
-  background-color: blue;
+}
+td.name-col {
+  border-right: 2px solid rgb(227, 227, 227);
+  
+}
+/*------------------------------------------------------------*/
+
+/* Profile */
+/*------------------------------------------------------------*/
+
+
+/* Estilos para a seção do perfil */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/* Estilos para as informações do perfil */
+.profile-info {
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+  font-family: arial;
+  background-color: white;
+  margin-left: 2vh;
+  border-radius: 1vh;
+  width: 125vh; 
+  height: 80vh; 
+  border: 2px solid rgb(215, 215, 215);
+}
+
+.profile-info h2 {
+  max-width: 40vh;
+  font-size: 20px;
+  padding-top: 3vh;
+  padding-left: 3vh;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  padding-top: 3vh;
+  padding-left: 3vh;
+}
+
+.card {
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+  width: 50vh;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  border-radius: 1vh;
+  border: 2px solid rgb(215, 215, 215);
+
+}
+.perfil-profile-picture {
+  border-radius: 50%;
+  width: 30vh;
+  height: 30vh;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-bottom: 2vh;
+  border: 2px solid rgb(215, 215, 215);
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+}  
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button.contact-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button.contact-button:hover {
+  opacity: 0.7;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card a:hover {
+  opacity: 0.7;
+}
+
+.separation-line{
+  height:2px;
+  background-color: rgb(215, 215, 215);
+}
+
+.area-btns{
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+.btn-perfil{
+  display: inline-block;
+  padding: 30px 25px;
+  text-decoration: none;
+  background-color: rgb(252, 174, 84);
   color: white;
   border-radius: 5px;
-  text-decoration: none;
+  border: 1px solid rgb(215, 215, 215);
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+}
+
+.btn-perfil:hover{
+    background-color: #a8c2e6;
+    color: white;
 }

@@ -9,23 +9,15 @@ function closeNav(){
 function openHeaderDrop() {
   let dropTrigger = document.getElementById("headerRight");
   let dropdownContainer = document.getElementById("dropdownMenuProfile");
+  let arrowDrop = document.getElementById("dropdownArrow");
+
 
   dropTrigger.addEventListener("click", function() {
-    if (dropdownContainer.style.display === "" || dropdownContainer.style.display === "none") {
-      dropdownContainer.style.display = "flex";
-    } else {
-      dropdownContainer.style.display = "none";
-    }
+    // Toggle the "hidden" class to show/hide the dropdown
+    dropdownContainer.classList.toggle("hidden");
   });
 
-  window.addEventListener("click", function(event) {
-    if (event.target !== dropTrigger && event.target !== dropdownContainer) {
-      dropdownContainer.style.display = "none";
-    }
-  });
 }
-///////////////////////////////////////////////////////////////////////////////////////
-
 
 ////////////////////////////////////////chamada////////////////////////////////////////
 (function () {
@@ -51,7 +43,6 @@ function openHeaderDrop() {
   }
 }());
 
-/* STUDENT APPLICATION */
 $(function () {
   var attendance = JSON.parse(localStorage.attendance),
       $allMissed = $('tbody .missed-col'),
@@ -74,7 +65,7 @@ $(function () {
       });
   }
 
-  // Calculate and display percentage of presence
+  // Calcula Porcentagem
   function calculatePercentage() {
       $allMissed.each(function () {
           var studentRow = $(this).parent('tr');
@@ -93,7 +84,6 @@ $(function () {
       });
   }
 
-  // Check boxes, based on attendace records
   $.each(attendance, function (name, days) {
       var studentRow = $('tbody .name-col:contains("' + name + '")').parent('tr');
       var dayChecks = $(studentRow).children('.attend-col').children('input');
@@ -103,7 +93,7 @@ $(function () {
       });
   });
 
-  // When a checkbox is clicked, update localStorage
+  // Da update quando a checkbox Ã© clicada
   $allCheckboxes.on('click', function () {
       var studentRows = $('tbody .student');
       var newAttendance = {};
