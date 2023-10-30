@@ -3,12 +3,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <style>
+
+        h5,
+        h4,
+        label {
+            margin: 10px;
+        }
+
         .form-section {
             display: flex;
             flex-direction: column;
-            margin: 5vh;
             padding: 5vh;
             justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.788);
+            color: rgb(255, 255, 255);
+        }
+
+        .form-section:first-of-type{
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .form-section:last-of-type{
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
         }
 
         .row-form {
@@ -18,7 +37,6 @@
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-            max-width: 800px;
         }
 
         .form-input__text {
@@ -34,31 +52,144 @@
             margin-left: 5vh;
         }
 
+        .form-section input,
+            textarea {
+            outline: 0;
+        }
+
         /* Additional CSS for checkboxes and labels in columns */
          .row-form__anamnese {
             display: flex;
             align-items: center;
         }
 
+        .titulo-anamnese {
+            border-bottom: 2px solid rgb(227, 124, 21);
+        }
+
+        .check-anamnese {
+            outline: 0;
+        }
+
+        .form-input__text {
+            width: 65vh;
+            height: 20vh;
+            border-radius: 10px;
+        }
+
+        .minor-text-anamnese {
+            width: 40vh;
+            height: 3vh;
+        }
+
+        textarea {
+            border-radius: 10px;
+            border: 2px solid rgb(227, 124, 21);
+        }
+
+        input[type="date"],
+            input[type="text"],
+            input[type="number"]{
+                border-radius: 5px;
+                border: 2px solid rgb(227, 124, 21);
+        }
+
+        input[type="submit"]{
+            background-color: rgb(227, 124, 21);
+            color: white;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 5px;
+            border: 2px solid white;
+            font-size: 16px;
+        }
+
+        input[type="number"]{
+            border: 2px solid rgb(227, 124, 21);
+
+        }
     </style>
 </head>
 <body class="body-anamnese">
+    <header class="header">
+        <div class="header-left" onclick="operateNav()">
+          <img class="logo-image" src="../img/logo-da-empresa.png">
+          <p class="hamburguer-menu-image">&#9776;</p> 
+          <div class="vertical-decoration-line"></div>
+        </div>
+        <div class="header-right" id="headerRight" onclick="operateDrop()">
+          <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
+          <img class="header-profile-picture" src="../img/conta1.jpg">
+          <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+      <a href="../../index.html">Portal</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Galeria</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Horário de Ônibus</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Resultados Esportivos</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Biblioteca</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Tomadas de Preço</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Ouvidoria</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Relatórios</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Programas</a>
+      </div>
+    </div>
+    <div id="dropdownMenuProfile" class="dropdown-menu">
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="TelaPerfil.html"><img src="../img/user.svg"></a>
+        <p> Perfil </p>
+      </div>
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="../../index.html"><img src="../img/log-out.svg"></a>
+        <p> Logout </p>
+      </div>
+    </div>
     <main class="flex-main center-text">
         <form class="form-identificacao">
-            <div class="form-section">
+            <div class="form-section titulo-anamnese">
                 <h1>ANAMNESE</h1>
                 <h3>QUESTIONÁRIO SOBRE ESTADO DE SAÚDE</h3>
             </div>
             <div class="form-section">
                 <h4>1. IDENTIFICAÇÃO</h4>
+                
                 <label for="nomeid">NOME:</label>
-                <input type="text" id="nomeid" class="form-input__text">
+                <input type="text"class="minor-text-anamnese">
+                
                 <label for="sexoid">SEXO:</label>
-                <input type="text" id="sexoid" class="form-input__text">
+                <input type="text"class="minor-text-anamnese">
+                
                 <label for="dataid">DATA DE NASCIMENTO:</label>
-                <input type="text" id="dataid" class="form-input__text">
+                <input type="date">
+                
                 <label for="idadeid">IDADE:</label>
-                <input type="text" id="idadeid" class="form-input__text">
+                <input type="number">
             </div>
             
             <div class="form-section">
@@ -86,111 +217,111 @@
             <div class="form-section">
                 <h5>Atividades desempenhadas no trabalho (+ de 25%)</h5>
                 <div class="row-form">
-                    <input type="checkbox" id="cadeiratrab" class="form-input__text">
+                    <input class="check-anamnese" type="checkbox" id="cadeiratrab" class="form-input__text">
                     <label for="cadeiratrab">Sentar na cadeira</label>
                     
-                    <input type="checkbox" id="pesostrab" class="form-input__text">
+                    <input class="check-anamnese" type="checkbox" id="pesostrab" class="form-input__text">
                     <label for="pesostrab">Levantar ou carregar pesos</label>
                     
-                    <input type="checkbox" id="depetrab" class="form-input__text">
+                    <input class="check-anamnese" type="checkbox" id="depetrab" class="form-input__text">
                     <label for="depetrab">Ficar de pé</label>
                     
-                    <input type="checkbox" id="caminhartrab" class="form-input__text">
+                    <input class="check-anamnese" type="checkbox" id="caminhartrab" class="form-input__text">
                     <label for="caminhartrab">Caminhar</label>
                     
-                    <input type="checkbox" id="dirigirtrab" class="form-input__text">
+                    <input class="check-anamnese" type="checkbox" id="dirigirtrab" class="form-input__text">
                     <label for="dirigirtrab">Dirigir</label>
                 </div>
                 <label for="outrostrab">Outros</label>
-                <input type="text" id="obsvidadiaria" class="form-input__text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
 
             <div class="form-section">
                 <h4>3. HISTÓRICO MÉDICO</h4>
                 <label for="dataexame">Data do último exame físico e/ou médico:</label>
-                <input type="text" id="dataexame" class="form-input__text">
+                <input type="date" id="dataexame">
             </div>
             <div class="form-section">
                 <h5>Marque aqueles que tenham tido alguma cardiopatia antes dos 50 anos:</h5>
                 <div>
-                    <input type="checkbox" id="paicardiopatia">
+                    <input class="check-anamnese" type="checkbox" id="paicardiopatia">
                     <label for="paicardiopatia">Pai</label>
                     
-                    <input type="checkbox" id="maecardiopatia">
+                    <input class="check-anamnese" type="checkbox" id="maecardiopatia">
                     <label for="maecardiopatia">Mãe</label>
                     
-                    <input type="checkbox" id="irmaocardiopatia">
+                    <input class="check-anamnese" type="checkbox" id="irmaocardiopatia">
                     <label for="irmaocardiopatia">Irmão ou Irmã</label>
                     
-                    <input type="checkbox" id="avocardiopatia">
+                    <input class="check-anamnese" type="checkbox" id="avocardiopatia">
                     <label for="avocardiopatia">Avô ou Avó</label>
                 </div>
             </div>
             <div class="form-section">
                 <h5>Marque os problemas abaixo que tenham sido diagnosticados ou tratados por um médico</h5>
-                <div class="form-section">
+                <div>
                     <div class="row-form">
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="alcoolismoprob">
+                            <input class="check-anamnese" type="checkbox" id="alcoolismoprob">
                             <label for="alcoolismoprob">Alcoolismo</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="renalprob">
+                            <input class="check-anamnese" type="checkbox" id="renalprob">
                             <label for="renalprob">Problema Renal</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="enfisemaprob">
+                            <input class="check-anamnese" type="checkbox" id="enfisemaprob">
                             <label for="enfisemaprob">Enfisema</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="anemiaprob">
+                            <input class="check-anamnese" type="checkbox" id="anemiaprob">
                             <label for="anemiaprob">Anemia</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="artriteprob">
+                            <input class="check-anamnese" type="checkbox" id="artriteprob">
                             <label for="artriteprob">Artrite</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="ocularprob">
+                            <input class="check-anamnese" type="checkbox" id="ocularprob">
                             <label for="ocularprob">Problemas Oculares</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="ulceraprob">
+                            <input class="check-anamnese" type="checkbox" id="ulceraprob">
                             <label for="ulceraprob">Úlcera</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="asmaprob">
+                            <input class="check-anamnese" type="checkbox" id="asmaprob">
                             <label for="asmaprob">Asma</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="diabetesprob">
+                            <input class="check-anamnese" type="checkbox" id="diabetesprob">
                             <label for="diabetesprob">Diabetes</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="pressaoaltaprob">
+                            <input class="check-anamnese" type="checkbox" id="pressaoaltaprob">
                             <label for="pressaoaltaprob">Pressão Arterial Alta</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="avcprob">
+                            <input class="check-anamnese" type="checkbox" id="avcprob">
                             <label for="avcprob">AVC</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="obesidadeprob">
+                            <input class="check-anamnese" type="checkbox" id="obesidadeprob">
                             <label for="obesidadeprob">Obesidade</label>
                         </div>
                         <div class="row-form__anamnese">
-                            <input type="checkbox" id="muscularprob">
+                            <input class="check-anamnese" type="checkbox" id="muscularprob">
                             <label for="muscularprob">Problemas Musculares</label>
                         </div>
                     </div>
                 </div>
                 
                 <label for="outrosprob">Outros:</label>
-                <input type="text" id="outrosprob">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
             <div class="form-section">
                 <label for="medicamentos">Descreva os medicamentos utilizados nos últimos tempos</label>
-                <input type="text" id="medicamentos" class="form-input__text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
             <div class="form-section">
                 <h5>Indique os sintomas, conforme segue:</h5>
@@ -217,19 +348,19 @@
                     <label for="naoalergia">Não</label>
                 </div>                    
                 <label for="quaisalergia">Quais?</label>
-                <input type="text" id="quaisalergia" class="form-input__text">    
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>    
             </div>
             <div class="form-section">
                 <h4>4. COMPORTAMENTO RELACIONADO À SAÚDE</h4>
+                <h5>Você fuma atualmente?</h5>
                 <div class="row-form">
-                    <h5>Você fuma atualmente?</h5>
                     <input type="radio" name="fuma">
                     <label for="simfumante">Sim</label>
                     <input type="radio" name="fuma">
                     <label for="simfumante">Não</label>
                 </div>
                 <label for="textofumante">Se sim, quantos cigarros por dia?</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
                 
                 <h5>Atualmente, você realiza alguma atividade física?</h5>
                 <div class="row-form">
@@ -240,49 +371,48 @@
                     <label for="naoatividadefisica">Não</label>
                 </div>                    
                 <label for="quaisatividadefisica">Quais?</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
                 
                 <label for="quaisatividadefisica">Frequencia:</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
                 
                 <label for="quaisatividadefisica">Duração:</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
             <div class="form-section">
                 <h4>5. OBJETIVOS COM RELAÇÃO À ATIVIDADE FÍSICA</h4>
                 <div class="row-form">
-                    <input type="checkbox">
+                    <input class="check-anamnese" type="checkbox">
                     <label for="esteticaobj">Estética</label>
                     
-                    <input type="checkbox">
+                    <input class="check-anamnese" type="checkbox">
                     <label for="lazerobj">Lazer</label>
                     
-                    <input type="checkbox">
+                    <input class="check-anamnese" type="checkbox">
                     <label for="terapeuticoobj">Terapêutico</label>
                     
-                    <input type="checkbox">
+                    <input class="check-anamnese" type="checkbox">
                     <label for="condicionamentoobj">Condicionamento Físico</label>
                     
-                    <input type="checkbox">
+                    <input class="check-anamnese" type="checkbox">
                     <label for="convivioobj">Convívio Social</label>
                     
-                    <input type="checkbox">
+                    <input class="check-anamnese" type="checkbox">
                     <label for="emagrecimentoobj">Emagrecimento</label>
                 </div>
                 <label for="outroobj">Outros:</label>
-                <input type="text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
             <div class="form-section">
                 <h4>6. COMENTÁRIOS GERAIS</h4>
-            </div>
-            <div class="form-section">
                 <p>Caso você tenha alguma informação para acrescentar, que não tenha sido perguntada neste questionário de saúde, favor registrar no espaço abaixo</p>
-                <input type="text" id="comentariosgerais" class="form-input__text">
+                <textarea placeholder="Digite aqui..." cols="30" rows="10"></textarea>
             </div>
             <div class="form-section">
                 <input type="submit" value="Submit">
             </div>
         </form>
     </main>
+    <script src="../js/script.js"></script>
 </body>
 </html>
