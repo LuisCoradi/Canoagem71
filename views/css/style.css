@@ -158,7 +158,13 @@ body {
 
 /*Background Imagem*/
 /*------------------------------------------------------------*/
-
+.background-image-container {
+  background-image: url('/views/img/background.jpg'); /* Caminho para a imagem de fundo */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  color: #ffffff; /* Cor do texto, ajuste conforme necessário para legibilidade */
+  padding: 20px; /* Adiciona algum espaçamento interno para evitar sobreposição com o conteúdo */
+}
 /*------------------------------------------------------------*/
 
 /*Questionario*/
@@ -690,11 +696,19 @@ td.missed-col {
   height: 70vh;
   margin-top: 3vh;
 }
+.table-container-turma{
+  max-width: 70%;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-top: 3vh;
+}
 
 /* Set border-spacing for the entire table (including th) */
 .table-chamada {
   border-collapse: separate;
   border-spacing: 0.7px;
+  border: 2px solid rgb(215, 215, 215);
 }
 
 th.name-col,
@@ -750,6 +764,7 @@ td.name-col {
   width: 125vh; 
   height: 80vh; 
   border: 2px solid rgb(215, 215, 215);
+  
 }
 
 .profile-info h2 {
@@ -826,13 +841,19 @@ td.name-col {
 .area-btns{
   padding-top: 5vh;
   padding-left: 5vh;
+
+}
+.btns-teste{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .btn-perfil{
   display: inline-block;
   padding: 30px 25px;
   text-decoration: none;
   background-color: rgb(252, 174, 84);
-  color: white;
+  color: black;
   border-radius: 5px;
   border: 1px solid rgb(215, 215, 215);
   transition: background-color 0.3s, color 0.3s;
@@ -842,4 +863,35 @@ td.name-col {
 .btn-perfil:hover{
     background-color: #a8c2e6;
     color: white;
+}
+
+.btn-tbl{
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: rgb(252, 174, 84);
+  color: black;
+  border-radius: 5px;
+  border: 1px solid rgb(215, 215, 215);
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+}
+.btn-tbl:hover{
+  background-color: #a8c2e6;
+  color: white;
+}
+
+.btn-central{
+  display: flex;
+  padding: 30px 25px;
+  text-decoration: none;
+  background-color: rgb(252, 174, 84);
+  color: black;
+  border-radius: 5px;
+  border: 1px solid rgb(215, 215, 215);
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 6px 12px 0 rgba(5, 5, 5, 0.2);
+  bottom: 0;
+  flex-wrap: wrap;
+  margin-right: 40px;
 }

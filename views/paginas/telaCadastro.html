@@ -10,42 +10,33 @@
 </head>
 <body>
   <header class="header">
-    <div class="header-left" onclick="openNav()">
+    <div class="header-left" onclick="operateNav()">
       <img class="logo-image" src="/views/img/logo-da-empresa.png">
-      <p class="hamburguer-menu-image">&#9776;</p>
 
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Item 1</a>
-        <a href="#">Item 2</a>
-        <a href="#">Item 3</a>
-      </div>
-    </div>
-    <div class="header-middle">
       <div class="vertical-decoration-line"></div>
-      <div class="container-searchbar">
-        <button class="header-searchbar-button"><img src="/views/img/search.svg"></button>
-        <input class="header-searchbar" placeholder="Buscar..." type="text">
-      </div>
     </div>
-    <div class="header-right">
-      <img class="header-profile-picture" src="/views/img/conta1.jpg">
-      <h2 class="header-profile-name"> Zeca Figueiredo </h2>
-    </div>
-  </header>
-  
-  <main>
-    
+</header>
+<div class="background-image-container">
+<main class="page">
 
-  </main>
+  <form class="formLogin" action="/views/paginas/telaPerfilAluno.html">
+      <h1>Cadastro</h1>
+      <p>Digite os seus dados de acesso no campo abaixo.</p>
+      <label for="email">Nome Completo</label>
+      <input type="email" placeholder="Digite seu Nome Completo" autofocus="true" />
+      <label for="email">E-mail</label>
+      <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+      <label for="email">Telefone/Celular</label>
+      <input type="email" placeholder="Digite seu Numero de Telefone" autofocus="true" />
+      <label for="password">Senha</label>  
+      <input type="password" placeholder="Digite sua senha" required/>
+      <input type="password" placeholder="Repita a Senha" required/>
+      <input type="submit" value="Cadastrar" class="btn" />
+  </form>
 
-  <footer class="footer-padrao">
-    <p>&copy; 2023 - Todos os direitos reservados</p>
-      <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
-      <p><a>Termos de uso</a></p>
-      <p><a>Política de privacidade</a></p>
-      <p><a>Sobre nós</a></p>
-  </footer>
+</main>
+</div>
+
     
 </body>
 </html>

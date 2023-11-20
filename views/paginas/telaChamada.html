@@ -1,413 +1,416 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Chamada</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Chamada</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript" src="../js/script.js"></script>
 </head>
+
 <body>
-    <header class="header">
-        <div class="header-left" onclick="operateNav()">
-          <img class="logo-image" src="/views/img/logo-da-empresa.png">
-          <p class="hamburguer-menu-image">&#9776;</p> 
-          <div class="vertical-decoration-line"></div>
-        </div>
-        <div class="header-right" id="headerRight" onclick="operateDrop()">
-          <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
-          <img class="header-profile-picture" src="/views/img/conta1.jpg">
-          <h2 class="header-profile-name"> Zeca Figueiredo </h2>
-        </div>
-    </header>
-    <div id="mySidebar" class="sidebar">
-      <a href="../index.html">Portal</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Galeria</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Horário de Ônibus</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Resultados Esportivos</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Biblioteca</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Tomadas de Preço</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Ouvidoria</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Relatórios</a>
-      <div class="decoration-horizontal-container">
-        <div class="decoration-horizontal-line"></div>
-      </div>
-      <a href="#">Programas</a>
-      </div>
+  <header class="header">
+    <div class="header-left" onclick="operateNav()">
+      <img class="logo-image" src="/views/img/logo-da-empresa.png">
+      <p class="hamburguer-menu-image">&#9776;</p>
+      <div class="vertical-decoration-line"></div>
     </div>
-    <div id="dropdownMenuProfile" class="dropdown-menu">
-      <div class="dropdown-menu__element" id="dropdownElement">
-        <a href="/views/paginas/TelaPerfil.html"><img src="/views/img/user.svg"></a>
-        <p> Perfil </p>
-      </div>
-      <div class="dropdown-menu__element" id="dropdownElement">
-        <a href="../index.html"><img src="/views/img/log-out.svg"></a>
-        <p> Logout </p>
-      </div>
+    <div class="header-right" id="headerRight" onclick="operateDrop()">
+      <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
+      <img class="header-profile-picture" src="/views/img/conta1.jpg">
+      <h2 class="header-profile-name"> Zeca Figueiredo </h2>
     </div>
-    <main class="flex-main">
-      <div class="table-container">
-        <table class="table-chamada">
-            <thead>
-                <tr class="table-row__chamada">
-                    <th class="name-col">Nome</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>10</th>
-                    <th>11</th>
-                    <th>12</th>
-                    <th>13</th>
-                    <th>14</th>
-                    <th>15</th>
-                    <th>16</th>
-                    <th>17</th>
-                    <th>18</th>
-                    <th>19</th>
-                    <th>20</th>
-                    <th>21</th>
-                    <th>22</th>
-                    <th>23</th>
-                    <th>24</th>
-                    <th>25</th>
-                    <th>26</th>
-                    <th>27</th>
-                    <th>28</th>
-                    <th>29</th>
-                    <th>30</th>
-                    <th>31</th>
-                    <th class="missed-col">Faltas</th>
-                    <td class="percentage-col">%</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="student">
-                    <td class="name-col">Zé</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-                <tr class="student">
-                    <td class="name-col">Zézão</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-                <tr class="student">
-                    <td class="name-col">Zézildo</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-                <tr class="student">
-                    <td class="name-col">Zézinho</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-                <tr class="student">
-                    <td class="name-col">Zeron Divino</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-                <tr class="student">
-                    <td class="name-col">Jilherme Zoyer</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-                <tr class="student">
-                    <td class="name-col">Zuis Felipe</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-                <tr class="student">
-                    <td class="name-col">Zeca Pagode</td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="attend-col"><input type="checkbox"></td>
-                    <td class="missed-col">0</td>
-                    <td class="percentage-col">0.00%</td>
-                </tr>
-            </tbody>
-        </table>
+  </header>
+  <div id="mySidebar" class="sidebar">
+    <a href="../index.html">Portal</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
     </div>
-    </main>
-    <footer class="footer-padrao">
-        <p>&copy; 2023 - Todos os direitos reservados</p>
-          <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
-          <p><a>Termos de uso</a></p>
-          <p><a>Política de privacidade</a></p>
-          <p><a>Sobre nós</a></p>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="/views/js/script.js"></script>
+    <a href="#">Galeria</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
+    </div>
+    <a href="#">Horário de Ônibus</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
+    </div>
+    <a href="#">Resultados Esportivos</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
+    </div>
+    <a href="#">Biblioteca</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
+    </div>
+    <a href="#">Tomadas de Preço</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
+    </div>
+    <a href="#">Ouvidoria</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
+    </div>
+    <a href="#">Relatórios</a>
+    <div class="decoration-horizontal-container">
+      <div class="decoration-horizontal-line"></div>
+    </div>
+    <a href="#">Programas</a>
+  </div>
+  </div>
+  <div id="dropdownMenuProfile" class="dropdown-menu">
+    <div class="dropdown-menu__element" id="dropdownElement">
+      <a href="/views/paginas/TelaPerfil.html"><img src="/views/img/user.svg"></a>
+      <p> Perfil </p>
+    </div>
+    <div class="dropdown-menu__element" id="dropdownElement">
+      <a href="../index.html"><img src="/views/img/log-out.svg"></a>
+      <p> Logout </p>
+    </div>
+  </div>
+  <main class="flex-main">
+    <div class="table-container">
+      <table class="table-chamada">
+        <thead>
+          <tr class="table-row__chamada">
+            <th class="name-col">Nome</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+            <th>19</th>
+            <th>20</th>
+            <th>21</th>
+            <th>22</th>
+            <th>23</th>
+            <th>24</th>
+            <th>25</th>
+            <th>26</th>
+            <th>27</th>
+            <th>28</th>
+            <th>29</th>
+            <th>30</th>
+            <th>31</th>
+            <th class="missed-col">Faltas</th>
+            <td class="percentage-col">%</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="student">
+            <td class="name-col">Zé</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Zézão</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Zézildo</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Zézinho</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Zeron Divino</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Jilherme Zoyer</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Zuis Felipe</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Zeca Pagode</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+            <td class="percentage-col">0.00%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="footer-padrao">
+    <p>&copy; 2023 - Todos os direitos reservados</p>
+    <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
+    <p><a>Termos de uso</a></p>
+    <p><a>Política de privacidade</a></p>
+    <p><a>Sobre nós</a></p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/views/js/script.js"></script>
 </body>
+
 </html>

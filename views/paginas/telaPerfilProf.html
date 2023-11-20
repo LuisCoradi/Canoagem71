@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left" onclick="operateNav()">
+          <img class="logo-image" src="../img/logo-da-empresa.png">
+          <p class="hamburguer-menu-image">&#9776;</p> 
+          <div class="vertical-decoration-line"></div>
+        </div>
+        <div class="header-right" id="headerRight" onclick="operateDrop()">
+          <p id="dropdownArrow" class="dropdown-arrow">&#11167</p>
+          <img class="header-profile-picture" src="../img/conta1.jpg">
+          <h2 class="header-profile-name"> Zeca Figueiredo </h2>
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+      <a href="../../index.html">Portal</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Galeria</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Horário de Ônibus</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Resultados Esportivos</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Biblioteca</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Tomadas de Preço</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Ouvidoria</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Relatórios</a>
+      <div class="decoration-horizontal-container">
+        <div class="decoration-horizontal-line"></div>
+      </div>
+      <a href="#">Programas</a>
+      </div>
+    </div>
+    <div id="dropdownMenuProfile" class="dropdown-menu">
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="telaPerfilAluno.html"><img src="../img/user.svg"></a>
+        <p> Perfil </p>
+      </div>
+      <div class="dropdown-menu__element" id="dropdownElement">
+        <a href="../../index.html"><img src="../img/log-out.svg"></a>
+        <p> Logout </p>
+      </div>
+    </div>
+  <div class="profile-container">
+    <div class="card">
+      <img class="perfil-profile-picture" src="../img/conta1.jpg" alt="Zeca" >
+      <h1>Zeca Figueredo</h1>
+      <p><strong>Curso:</strong>Meninos do Lago</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+
+    </div>
+    <div class="profile-info">
+      <div>
+        <h2>Informação do Professor</h2>
+        <p><strong>Nome Completo:</strong> Zeca Figueredo Junior Senior</p>
+        <p><strong>Email:</strong> Zecaburguer@gmail.com</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+          <hr class="separation-line">
+      </div>
+      <div class="btns-teste">
+        <div class="area-btns">
+          <a href="telaTurmas.html" class="btn-perfil">Turmas</a>
+        </div>
+
+      </div>
+
+  </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
